@@ -42,7 +42,7 @@ function App() {
             <h1>Demanou Loïc</h1>
             <p>Je suis Développeur web full stack junior laravel|React Js</p>
             {/* <button className="btn btn-primary btn-lg">Télécharger mon CV <i class='bx bx-cloud-download'></i></button> */}
-            <ExternalLink href="https://drive.google.com/file/d/1rTozpAM6-M5MFFsSREQ91QI15VQ68cVn/view?usp=sharing">
+            <ExternalLink href="https://drive.google.com/file/d/1Gp_ygtOMcFKzD9Uv5L1IMztHtNN4xCUP/view?usp=sharing">
               <span className="btn btn-primary btn-lg"> Télécharger mon CV <i class='bx bx-cloud-download'></i></span>
             </ExternalLink>
           </div>
