@@ -4,9 +4,7 @@ const SkillSection = () => {
             <div className="container">
                 <div className="section-title">
                     <h2>Competences</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-                        in iste officiis commodi quidem hic quas.</p>
+                    <p>Mes compétences sont principalement reparties en développement web, UI/UX design et Analyse logicielle.</p>
                 </div>
                 <div className="row skills-content">
                     <div className="col-lg-6" data-aos="fade-up">
@@ -52,20 +50,6 @@ const SkillSection = () => {
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                         <center className="">👉Autres Compétences</center>
                         <div className="progress">
-                            <span className="skill">WordPress/CMS <i className="val">60%</i></span>
-                            <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="progress">
-                            <span className="skill">Git &amp; Github <i className="val">80%</i></span>
-                            <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="progress">
                             <span className="skill">UI/UX design <i className="val">65%</i></span>
                             <div className="progress-bar-wrap">
                                 <div className="progress-bar" role="progressbar" style={{ width: "65%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
@@ -79,6 +63,21 @@ const SkillSection = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="progress">
+                            <span className="skill">Git &amp; Github <i className="val">80%</i></span>
+                            <div className="progress-bar-wrap">
+                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="progress">
+                            <span className="skill">WordPress/CMS <i className="val">60%</i></span>
+                            <div className="progress-bar-wrap">
+                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

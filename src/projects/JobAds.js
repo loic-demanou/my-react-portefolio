@@ -5,6 +5,7 @@ import home from '../Ressources/JobAds/home.PNG';
 import jobs from '../Ressources/JobAds/jobs.PNG';
 import myads from '../Ressources/JobAds/myads.PNG';
 import details from '../Ressources/JobAds/details.PNG';
+import { ExternalLink } from 'react-external-link';
 
 const JobAds = () => {
     return (
@@ -78,7 +79,12 @@ const JobAds = () => {
                                                 <li><strong>Entreprise</strong>: Lyss consulting</li>
                                                 {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>
-                                                <li><strong>Project URL</strong>: <a href="https://drive.google.com/drive/folders/1wNOxwavIo8sqdA14ksjV2H--lnzj1Kld" target="_blank">Ouvrir le lien google des images du projet</a></li>
+                                                <li><strong>Project URL</strong>:
+                                                 {/* <a href="https://drive.google.com/drive/folders/1wNOxwavIo8sqdA14ksjV2H--lnzj1Kld" target="_blank">Ouvrir le lien google des images du projet</a> */}
+                                                 <ExternalLink href="https://drive.google.com/drive/folders/1wNOxwavIo8sqdA14ksjV2H--lnzj1Kld">
+                                                        <span> Voir toutes les images depuis google drive</span>
+                                                    </ExternalLink>
+                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">

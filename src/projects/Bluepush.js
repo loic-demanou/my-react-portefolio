@@ -1,13 +1,12 @@
 import { useEffect } from "react";
-import logo from "../logo.svg";
 // import $ from 'jquery'
-// import './blupush.css';
 import dash from '../Ressources/Bluepush/Dashboard.PNG'
 import msgman from '../Ressources/Bluepush/msgmanuels.PNG'
 import adduser from '../Ressources/Bluepush/adduser.PNG'
 import survey from '../Ressources/Bluepush/survey.PNG'
 import userlist from '../Ressources/Bluepush/userlist.PNG'
-import { Link } from "react-router-dom";
+import { ExternalLink } from "react-external-link";
+// import { Link } from "react-router-dom";
 const Bluepush = () => {
   useEffect(() => {
 
@@ -36,9 +35,9 @@ const Bluepush = () => {
                       <div className="align-items-center">
                         <input type="radio" id="check_6" name="check" className="r_check" defaultChecked="checked" />
                         <label htmlFor="check_6" className="on_check">
-                          <img className="vignette" src={dash} alt />
+                          <img className="vignette" src={dash} alt="dashqsdqsd" />
                         </label>
-                        <img className="big_image" src={dash} alt /></div>
+                        <img className="big_image" src={dash} alt="dashqsdqsd big" /></div>
                       {/*--------------img02-----------------*/}
                       <div>
                         <input type="radio" id="check_7" name="check" className="r_check" />
@@ -84,7 +83,12 @@ const Bluepush = () => {
                         <li><strong>Entreprise</strong>: Lyss consulting</li>
                         {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                         <li><strong>Nbre de participants</strong>: 03</li>
-                        <li><strong>Project URL</strong>: <a href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF" target="_blank">Ouvrir le lien google des images du projet</a></li>
+                        <li><strong>Project URL</strong>:
+                          {/* <a target="_blank" href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF">Ouvrir le lien google des images du projet</a> */}
+                          <ExternalLink href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF">
+                            <span> Voir toutes les images depuis google drive</span>
+                          </ExternalLink>
+                        </li>
                       </ul>
                     </div>
                     <div className="portfolio-description">

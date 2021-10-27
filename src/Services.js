@@ -1,14 +1,41 @@
+import './service.css'
 const Services = () => {
     return (
         <>
             <div className="container">
                 <div className="section-title">
                     <h2>Services</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-                        in iste officiis commodi quidem hic quas.</p>
+                    {/* <p>Mes services sont beaucoup plus basés sur le développement web e</p> */}
                 </div>
+
                 <div className="row">
+                <div className="col-lg-6">
+                        <div className="card bg-dark text-white">
+                            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" height="382px" className="card-img" alt="services" />
+                            <div className="card-img-overlay" style={{ marginTop:"35%" }}>
+                                <h3 className="card-title fw-bold">Développement web</h3>
+                                <h6 className="card-text">Réaliser des sites web ou des applications web est l'une de mes plus grandes
+                                passions quotidiennes.</h6>
+                                {/* <p className="card-text">Last updated 3 mins ago</p> */}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-md-6">
+                        <div className="card bg-dark text-white">
+                            <img src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=965&q=80" height="382px" className="card-img" alt="services" />
+                            <div className="card-img-overlay">
+                                <h3 className="card-title fw-bold">Désign UI/UX</h3>
+                                <h6 className="card-text">Je suis également disponible pour la réalisation des maquettes de vos sites web,
+                                 applications en version Web et/ou mobile.</h6>
+                                {/* <p className="card-text">Last updated 3 mins ago</p> */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* <div className="row">
                     <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
                         <div className="icon"><i className="bi bi-briefcase" /></div>
                         <h4 className="title"><a href>Lorem Ipsum</a></h4>
@@ -46,6 +73,8 @@ const Services = () => {
                             soluta nobis est eligendi</p>
                     </div>
                 </div>
+ */}
+
             </div>
 
 

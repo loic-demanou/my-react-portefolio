@@ -4,6 +4,7 @@ import adminjob from '../Ressources/univrec/adminjobs.PNG'
 import proposals from '../Ressources/univrec/proposals.PNG'
 import chat from '../Ressources/univrec/home.PNG'
 import login from '../Ressources/univrec/login.PNG'
+import { ExternalLink } from 'react-external-link'
 
 const Univrec = () => {
     return (
@@ -78,7 +79,12 @@ const Univrec = () => {
                                                 <li><strong>Entreprise</strong>: Projet scolaire</li>
                                                 {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>
-                                                <li><strong>Project URL</strong>: <a href="#">aucun</a></li>
+                                                <li><strong>Project URL</strong> :
+                                                    {/* <a href="#">aucun</a> */}
+                                                    <ExternalLink href="http://univrec.herokuapp.com/">
+                                                        <span> univrec.herokuapp.com</span>
+                                                    </ExternalLink>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
@@ -86,10 +92,10 @@ const Univrec = () => {
                                             <p>
                                                 Univrec est un système de recrutement universitaire basé su l'etude des CV des differentes candidatures <br />
                                                 principe: Les recruteurs publient des annonces dans le site, puis les candidats envoient leurs
-                                                leurs condidatures et le recruteur programme un entretient physique. 
+                                                leurs condidatures et le recruteur programme un entretient physique.
                                             </p>
                                             <p><strong>Fontionnalités</strong>:<br />
-                                                
+
                                                 <i class='bx bx-right-arrow-alt'></i> front-office: <br />
                                                 <i class='bx bx-right-arrow-alt'></i> CRUD de ses annonces <br />
                                                 <i class='bx bx-right-arrow-alt'></i> Programmer les entretients <br />

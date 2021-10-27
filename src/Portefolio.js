@@ -13,6 +13,7 @@ import movie from './Ressources/movie/trending.PNG'
 import chat from './Ressources/xd/chatmobile/overvieweb.PNG'
 import univrecuioverview from './Ressources/xd/univrec/overview.JPG'
 import UnivrecUI from "./projects/UnivrecUI";
+import boutique from './Ressources/kako/boutique.JPG';
 
 
 const Portefolio = () => {
@@ -20,7 +21,7 @@ const Portefolio = () => {
         <>
             <div className="container">
                 <div className="section-title">
-                    <h2>Portfolio</h2>
+                    <h2>Réalisations</h2>
                     <span className="d-flex"><h4 className="text-danger text-decoration-underline">NB </h4> &nbsp;: Certains projets n'ont pas de lien
                     URL pour des raisons diverses uniquement les images sont disponibles sur le cloud</span>
                     <p>Dans cette section je presentes quelques travaux éffectués durant mon parcours académique, professionnel et réalisations personnelles</p>
@@ -28,15 +29,15 @@ const Portefolio = () => {
                 <div className="row" data-aos="fade-up">
                     <div className="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
-                            <li data-filter="*" className="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
+                            <li data-filter="*" className="filter-active">Tous</li>
+                            <li data-filter=".filter-app">App web</li>
+                            <li data-filter=".filter-card">Maquette</li>
+                            {/* <li data-filter=".filter-web">Web</li> */}
                         </ul>
                     </div>
                 </div>
                 <div className="row portfolio-container" data-aos="fade-up" data-aos-delay={100}>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
                             <img src={bluepush} className="img-fluid" alt="image1" />
                             <div className="portfolio-links">
@@ -47,11 +48,11 @@ const Portefolio = () => {
                         </div>
                         <span className="mb-2">
                                 <center><strong>BluePush</strong></center>
-                                <center className="fst-italic">Application de relance et de fidélisation de clients par SMS</center>
+                                <center className="fst-italic">Application de marketing SMS</center>
                         </span>
                     </div>
                                 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
                             <img src={jobad} className="img-fluid" alt="image2" />
                             <div className="portfolio-links">
@@ -77,7 +78,7 @@ const Portefolio = () => {
                                 <center className="fst-italic">Application web de recrutement universitaire</center>
                         </span>
                     </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
                             <img src={movie} className="img-fluid" alt="image4" />
                             <div className="portfolio-links">
@@ -90,9 +91,9 @@ const Portefolio = () => {
                                 <center className="fst-italic">Site de bandes annonces de films &amp; séries</center>
                         </span>
                     </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="image5" />
+                            <img src={boutique} className="img-fluid" alt="image5" />
                             <div className="portfolio-links">
                                 {/* <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus" /></a> */}
                                 <Link to="#" data-bs-toggle="modal" data-bs-target="#reactecommerce" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
@@ -103,7 +104,7 @@ const Portefolio = () => {
                                 <center className="fst-italic">Application react js|Laravel de ecommerce</center>
                         </span>
                     </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div className="portfolio-wrap">
                             <img src={chat} className="img-fluid" alt="image6" />
                             <div className="portfolio-links">
@@ -129,7 +130,7 @@ const Portefolio = () => {
                                 <center className="fst-italic">UI design de Univrec l'appli de recrutement universitaire</center>
                         </span>
                     </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                    {/* <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div className="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="image8" />
                             <div className="portfolio-links">
@@ -137,8 +138,8 @@ const Portefolio = () => {
                                 <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                    </div> */}
+                    {/* <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div className="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="image9" />
                             <div className="portfolio-links">
@@ -146,7 +147,7 @@ const Portefolio = () => {
                                 <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <JobAds />
                 <Bluepush />

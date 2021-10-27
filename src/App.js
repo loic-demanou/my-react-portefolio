@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Link} from 'react-router-dom';
 import { useEffect } from 'react';
 import AboutSection from './AboutSection';
 import Portefolio from './Portefolio';
@@ -11,7 +11,7 @@ import $ from 'jquery'
 import Services from './Services';
 import Testimonial from './Testimonial';
 import Contact from './Contact';
-import Bluepush from './projects/Bluepush';
+import { ExternalLink } from 'react-external-link';
 
 function App() {
 
@@ -39,8 +39,12 @@ function App() {
         {/* <Switch> */}
         <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
           <div className="hero-container" data-aos="fade-in">
-            <h1>Demanou Loic</h1>
-            <p>Je suis Développeur web full stack laravel|React Js <span className="typed" data-typed-items="Designer, Developer, Freelancer, Photographer" /></p>
+            <h1>Demanou Loïc</h1>
+            <p>Je suis Développeur web full stack junior laravel|React Js</p>
+            {/* <button className="btn btn-primary btn-lg">Télécharger mon CV <i class='bx bx-cloud-download'></i></button> */}
+            <ExternalLink href="https://drive.google.com/file/d/1rTozpAM6-M5MFFsSREQ91QI15VQ68cVn/view?usp=sharing">
+              <span className="btn btn-primary btn-lg"> Télécharger mon CV <i class='bx bx-cloud-download'></i></span>
+            </ExternalLink>
           </div>
         </section>{/* End Hero */}
         <main id="main">

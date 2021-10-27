@@ -34,7 +34,7 @@ const Resume = () => {
                             <h5>De Juin 2021 - Septembre 2021</h5>
                             <p><em>Lyss consulting, Douala, Cameroun </em></p>
                             <ul>
-                                <li>J'ai participé à la conception et l’implementation d’une application web de relance et de fidélisation des clients via l'envoi des SMS avec le framework Laravel,
+                                <li>J'ai participé à la conception et l’implementation d’une application web de marketing SMS avec le framework Laravel,
                                     plus précisement du module utilisateur, rôles, permissions (ACL) et aussi de l'envoi manuel de SMS
                                 </li>
                                 <li>Conception et réalisation d'un site d'annonce d'emploi avec le framework PHP Laravel  </li>

@@ -1,0 +1,6 @@
+
+div .card:hover {
+  /* transform: translate(-50%, -10px); */
+  opacity: 0.8;
+}
+

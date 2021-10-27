@@ -1,12 +1,12 @@
-import logo from "../logo.svg";
+import { ExternalLink } from 'react-external-link'
 import overview from '../Ressources/xd/chatmobile/overview.PNG'
 import overvieweb from '../Ressources/xd/chatmobile/overvieweb.PNG'
-import contact from '../Ressources/xd/chatmobile/contact.PNG'
-import calls from '../Ressources/xd/chatmobile/calls.PNG'
-import discussion from '../Ressources/xd/chatmobile/discussion.PNG'
+// import contact from '../Ressources/xd/chatmobile/contact.PNG'
+// import calls from '../Ressources/xd/chatmobile/calls.PNG'
+// import discussion from '../Ressources/xd/chatmobile/discussion.PNG'
 import web1 from '../Ressources/xd/chatmobile/web1.PNG'
 import web2 from '../Ressources/xd/chatmobile/web2.PNG'
-import actuality from '../Ressources/xd/chatmobile/actuality.PNG'
+// import actuality from '../Ressources/xd/chatmobile/actuality.PNG'
 
 const Chatui = () => {
     return (
@@ -82,7 +82,7 @@ const Chatui = () => {
                                                 </label>
                                                 <img className="big_image" src={web2} alt="web2_big" />
                                             </div>
-                                        </div> 
+                                        </div>
 
 
                                     </div>
@@ -95,7 +95,12 @@ const Chatui = () => {
                                                 <li><strong>Entreprise</strong>: Projet personnel</li>
                                                 {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>
-                                                <li><strong>Project URL</strong>: <a href="https://drive.google.com/drive/folders/1yiyKQUGvEoHVfNrPHtzFqAIhjJYu58ER" target="_blank">Ouvrir le lien google des images des maquettes</a></li>
+                                                <li><strong>Project URL</strong>:
+                                                    {/* <a href="https://drive.google.com/drive/folders/1yiyKQUGvEoHVfNrPHtzFqAIhjJYu58ER" target="_blank">Ouvrir le lien google des images des maquettes</a> */}
+                                                    <ExternalLink href="https://drive.google.com/drive/folders/1yiyKQUGvEoHVfNrPHtzFqAIhjJYu58ER">
+                                                        <span> Voir toutes les images depuis google drive</span>
+                                                    </ExternalLink>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
