@@ -33,6 +33,7 @@ const Sidebar = () => {
                             <li><NavHashLink to="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content" />
                                 <span>Réalisations</span></NavHashLink></li>
                             <li><NavHashLink to="#services" className="nav-link scrollto"><i className="bx bx-server" /> <span>Services</span></NavHashLink></li>
+                            <li><NavHashLink to="#testimonials" className="nav-link scrollto"><i class='bx bx-user-voice' ></i> <span>Témoignages</span></NavHashLink></li>
                             <li><NavHashLink to="#contact" className="nav-link scrollto"><i className="bx bx-envelope" /> <span>Contact</span></NavHashLink></li>
                         </ul>
                     </nav>{/* .nav-menu */}
