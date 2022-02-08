@@ -86,7 +86,7 @@ const Ecommerce = () => {
                                                     <span>Voir toutes les images depuis google drive</span>
                                                 </ExternalLink>
                                                  {/* <a href="https://drive.google.com/drive/folders/1JYNQuiqUoGgqfcmBxYDUTUTBCaUfhHXk" target="_blank">Voir les images depuis google drive</a> */}
-                                                 </li>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
@@ -97,8 +97,8 @@ const Ecommerce = () => {
                                             <p><strong>Mes tâches </strong>:<br />
                                                 <i class='bx bx-right-arrow-alt'></i> Un back-office qui permet la gestion des produits <br />
                                                 <i class='bx bx-right-arrow-alt'></i>Un front-office qui liste les produits et les tâches qu'on peut éffectuer dessus
-                                                 bref... </p>
-                                                <i class='bx bx-right-arrow-alt'></i> Un systeme de paiement électronique inclus (Razorpay)  <br />
+                                            ... </p>
+                                                <i class='bx bx-right-arrow-alt'></i>Systemes de paiement électronique inclus (Paypal, Razorpay)  <br />
                                         </div>
                                     </div>
                                 </div>

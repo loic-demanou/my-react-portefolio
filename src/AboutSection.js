@@ -30,8 +30,8 @@ const AboutSection = () => {
                                     <ul>
                                         <li><i className="bi bi-chevron-right" /> <strong>Age:</strong> <span>21</span></li>
                                         {/* <li><i className="bi bi-chevron-right" /> <strong>Site web:</strong> <span>www.example.com</span></li> */}
-                                        <li><i className="bi bi-chevron-right" /> <strong>Téléphone:</strong> <span>+237 683 92 10 74</span></li>
-                                        <li><i className="bi bi-chevron-right" /> <strong>Ville:</strong> <span>Douala, Cameroun</span></li>
+                                        <li><i className="bi bi-chevron-right" /> <strong>Téléphone:</strong> <span>+225 07 01 82 67 64</span></li>
+                                        <li><i className="bi bi-chevron-right" /> <strong>Ville:</strong> <span>Abidjan, Côte d'ivoire</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">

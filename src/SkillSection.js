@@ -10,7 +10,7 @@ const SkillSection = () => {
                     <div className="col-lg-6" data-aos="fade-up">
                         <center className="">👉Développement web</center>
                         <div className="progress">
-                            <span className="skill">HTML/CSS/Bootstrap <i className="val">80%</i></span>
+                            <span className="skill">HTML/CSS/Bootstrap/Tailwind css <i className="val">80%</i></span>
                             <div className="progress-bar-wrap">
                                 <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                 </div>
@@ -25,21 +25,28 @@ const SkillSection = () => {
                             </div>
                         </div>
                         <div className="progress">
-                            <span className="skill">React js <i className="val">70%</i></span>
+                            <span className="skill">React js <i className="val">75%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "70%" }} aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="progress">
+                            <span className="skill">REST API <i className="val">60%</i></span>
+                            <div className="progress-bar-wrap">
+                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
                         <div className="progress">
                             <span className="skill">Vue js <i className="val">60%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
                         <div className="progress">
-                            <span className="skill">PHP-Laravel <i className="val">80%</i></span>
+                            <span className="skill">Laravel php <i className="val">80%</i></span>
                             <div className="progress-bar-wrap">
                                 <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
@@ -71,9 +78,9 @@ const SkillSection = () => {
                             </div>
                         </div>
                         <div className="progress">
-                            <span className="skill">WordPress/CMS <i className="val">60%</i></span>
+                            <span className="skill">WordPress/CMS <i className="val">40%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "40%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>

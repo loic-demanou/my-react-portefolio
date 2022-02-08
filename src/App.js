@@ -11,7 +11,8 @@ import $ from 'jquery'
 import Services from './Services';
 import Testimonial from './Testimonial';
 import Contact from './Contact';
-import { ExternalLink } from 'react-external-link';
+// import { ExternalLink } from 'react-external-link';
+import cv from "./Ressources/CV_Loïc_DEMANOU.pdf"
 
 function App() {
 
@@ -40,11 +41,14 @@ function App() {
         <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
           <div className="hero-container" data-aos="fade-in">
             <h1>Demanou Loïc</h1>
-            <p>Je suis Développeur web full stack junior laravel|React Js</p>
+            <p>Je suis Développeur web full stack junior Laravel | React Js</p>
             {/* <button className="btn btn-primary btn-lg">Télécharger mon CV <i class='bx bx-cloud-download'></i></button> */}
-            <ExternalLink href="https://drive.google.com/file/d/1Gp_ygtOMcFKzD9Uv5L1IMztHtNN4xCUP/view?usp=sharing">
-              <span className="btn btn-primary btn-lg"> Télécharger mon CV <i class='bx bx-cloud-download'></i></span>
-            </ExternalLink>
+            {/* <ExternalLink href="https://drive.google.com/file/d/1Gp_ygtOMcFKzD9Uv5L1IMztHtNN4xCUP/view?usp=sharing"> */}
+              <span className="btn btn-primary btn-lg text-white">
+                <a className="text-white" href={cv} download>Télécharger mon CV </a><i class='bx bx-cloud-download'></i>
+              </span>
+              
+            {/* </ExternalLink> */}
           </div>
         </section>{/* End Hero */}
         <main id="main">

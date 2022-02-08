@@ -12,7 +12,7 @@ const Resume = () => {
                     <div className="col-lg-6" data-aos="fade-up">
                         <h3 className="resume-title">Education</h3>
                         <div className="resume-item">
-                            <h4>Bachelor of Technology (BTECH) En Génie Logiciel</h4>
+                            <h4>Bachelor of Technology (BTECH) En Génie Logiciel</h4> 
                             <h5>2020 - 2021</h5>
                             <p><em>Institut Universitaire de la Côte, Douala, Cameroun</em></p>
                         </div>
@@ -30,6 +30,20 @@ const Resume = () => {
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                         <h3 className="resume-title">Experience Professionel</h3>
                         <div className="resume-item">
+                            <h4>Développeur fullstack Laravel &amp; Nextjs</h4>
+                            <h5>De Novembre 2021 - Janvier 2022</h5>
+                            <p><em>Parazit music, Douala, Cameroun </em></p>
+                            <ul>
+                                <li>J'ai participation au développement d'un site de vente de beats
+                                            musicaux avec Laravel et le framework front-end Nextjs, plus précisement de,  
+                                            (Gestion des utilisteurs et roles, Marketplace, Panier, Gestion des
+                                        beats et playlists, Système de Following et Favori, Back-Office
+                                        complet, ...)
+                                </li>
+                                {/* <li>Conception et réalisation d'un site d'annonce d'emploi avec le framework PHP Laravel  </li> */}
+                            </ul>
+                        </div>
+                        <div className="resume-item">
                             <h4>Développeur web Laravel stagiaire</h4>
                             <h5>De Juin 2021 - Septembre 2021</h5>
                             <p><em>Lyss consulting, Douala, Cameroun </em></p>
@@ -38,9 +52,6 @@ const Resume = () => {
                                     plus précisement du module utilisateur, rôles, permissions (ACL) et aussi de l'envoi manuel de SMS
                                 </li>
                                 <li>Conception et réalisation d'un site d'annonce d'emploi avec le framework PHP Laravel  </li>
-                                {/* <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                        design</li>
-                      <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> */}
                             </ul>
                         </div>
                         <div className="resume-item">
@@ -48,8 +59,9 @@ const Resume = () => {
                             <h5>De juillet 2019 - septembre 2019</h5>
                             <p><em>UPTIMA CM, Douala, Cameroun</em></p>
                             <ul>
-                                <li>Recommander les clients sur la conception graphique la plus appropriée</li>
-                                <li>Création des sites web avec le CMS wordpress</li>
+                                <li>Développement frontend en HTML, CSS et JS</li>
+                                <li>Analyse des besoins utilisateurs et création d’un cahier des
+                                charges technique</li>
                                 {/* <li>Recommended and consulted with clients on the most appropriate graphic design</li>
                       <li>Created 4+ design presentations and proposals a month for clients and account managers</li> */}
                             </ul>
