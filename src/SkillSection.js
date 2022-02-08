@@ -25,7 +25,7 @@ const SkillSection = () => {
                             </div>
                         </div>
                         <div className="progress">
-                            <span className="skill">React js <i className="val">75%</i></span>
+                            <span className="skill">React JS + Next JS <i className="val">75%</i></span>
                             <div className="progress-bar-wrap">
                                 <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
