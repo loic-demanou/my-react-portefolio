@@ -17,7 +17,7 @@ const AboutSection = () => {
                             <img src={profil} className="img-fluid" alt="home-cover" />
                         </div>
                         <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                            <h3>Développeur web junior Fullstack Laravel|React JS</h3>
+                            <h3>Développeur web junior Fullstack React JS | Laravel | Node Js</h3>
                             <p className="fst-italic">
                             Née en 2000 et Titulaire d'une licence technologique en Génie Logiciel, je suis un développeur web passionné d'informatique, j'ai appris a coder
                                 dans divers langages informatiques (JavaScript, Laravel,
@@ -28,16 +28,16 @@ const AboutSection = () => {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <ul>
-                                        <li><i className="bi bi-chevron-right" /> <strong>Age:</strong> <span>21</span></li>
+                                        <li><i className="bi bi-chevron-right" /> <strong>Age:</strong> <span>22 ans</span></li>
                                         {/* <li><i className="bi bi-chevron-right" /> <strong>Site web:</strong> <span>www.example.com</span></li> */}
                                         <li><i className="bi bi-chevron-right" /> <strong>Téléphone:</strong> <span>+225 07 01 82 67 64</span></li>
-                                        <li><i className="bi bi-chevron-right" /> <strong>Ville:</strong> <span>Abidjan, Côte d'ivoire</span></li>
+                                        <li><i className="bi bi-chevron-right" /> <strong>Ville:</strong> <span>Abidjan, Côte d'Ivoire</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
                                         {/* <li><i className="bi bi-chevron-right" /> <strong>Age:</strong> <span>30</span></li> */}
-                                        <li><i className="bi bi-chevron-right" /> <strong>Degree:</strong> <span>Bachelor of technology</span></li>
+                                        <li><i className="bi bi-chevron-right" /> <strong>Etude:</strong> <span>Licence Technologique</span></li>
                                         <li><i className="bi bi-chevron-right" /> <strong>Email:</strong> <span>loicdemanou.9@gmail.com</span>
                                         </li>
                                         <li><i className="bi bi-chevron-right" /> <strong>Freelance:</strong> <span>Disponible</span></li>

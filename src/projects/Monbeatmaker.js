@@ -1,23 +1,22 @@
 import { useEffect } from "react";
 // import $ from 'jquery'
-import dash from '../Ressources/Bluepush/Dashboard.PNG'
-import msgman from '../Ressources/Bluepush/msgmanuels.PNG'
-import adduser from '../Ressources/Bluepush/adduser.PNG'
-import survey from '../Ressources/Bluepush/survey.PNG'
-import userlist from '../Ressources/Bluepush/userlist.PNG'
+import dash from '../Ressources/monbeatmaker/home.PNG'
+import msgman from '../Ressources/monbeatmaker/beatracks.PNG'
+import adduser from '../Ressources/monbeatmaker/beatdetail.PNG'
+import survey from '../Ressources/monbeatmaker/beamakerdetails.PNG'
 import { ExternalLink } from "react-external-link";
 // import { Link } from "react-router-dom";
-const Bluepush = () => {
+const Monbeatmaker = () => {
   useEffect(() => {
 
   }, [])
 
   return (
-    <div className="modal fade" style={{ zIndex: "9999" }} id="bluepush" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div className="modal fade" style={{ zIndex: "9999" }} id="monbeatmaker" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div className="modal-dialog modal-xl">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="staticBackdropLabel">BluePush</h5>
+            <h5 className="modal-title" id="staticBackdropLabel">Monbeatmaker</h5>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
           </div>
           <div className="modal-body">
@@ -46,13 +45,7 @@ const Bluepush = () => {
                         </label>
                         <img className="big_image" src={msgman} alt="msg manuel" /></div>
                       {/*--------------img03-----------------*/}
-                      <div>
-                        <input type="radio" id="userlistju" name="check" className="r_check" />
-                        <label htmlFor="userlistju" className="on_check">
-                          <img className="vignette" src={userlist} alt="user list " />
-                        </label>
-                        <img className="big_image" src={userlist} alt="user list big" />
-                      </div>
+
                       {/*--------------img04-----------------*/}
                       <div>
                         <input type="radio" id="check_9" name="check" className="r_check" />
@@ -78,15 +71,15 @@ const Bluepush = () => {
                       <p>👈Cliquez sur les images pour visualiser</p>
                       <h3>informations</h3>
                       <ul>
-                        <li><strong>Nom</strong>: Bluepush</li>
-                        <li><strong>Stack</strong>: Laravel, Ajax, jQuery, Nexah API, Bootstrap 4</li>
-                        <li><strong>Entreprise</strong>: Lyss consulting</li>
+                        <li><strong>Nom</strong>: Monbeatmaker</li>
+                        <li><strong>Stack</strong>: NextJs, Laravel, TailwindCss</li>
+                        <li><strong>Entreprise</strong>: Parazit Music</li>
                         {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
-                        <li><strong>Nbre de participants</strong>: 03</li>
+                        <li><strong>Nbre de participants</strong>: 0</li>
                         <li><strong>Project URL</strong>:
                           {/* <a target="_blank" href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF">Ouvrir le lien google des images du projet</a> */}
-                          <ExternalLink href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF">
-                            <span> Voir toutes les images depuis google drive</span>
+                          <ExternalLink href="https://monbeatmaker.com/">
+                            {/* <span> https://monbeatmaker.com/</span> */}
                           </ExternalLink>
                         </li>
                       </ul>
@@ -94,12 +87,12 @@ const Bluepush = () => {
                     <div className="portfolio-description">
                       <h2>Détails</h2>
                       <p>
-                        Bluepush est une application web de relance et de fildélisation de clientelle via l'envoi des SMS
+                        Monbeatmaker est une plateforme d'ecommerce qui permet à tout beatmaker de vendre des beats musicaux
                       </p>
                       <p><strong>Mes tâches </strong>:<br />
-                        <i class='bx bx-right-arrow-alt'></i> Module ACL(Access Control List) avec le package Spatie
-                        pour la gestion des Utilisateurs, Rôles et des permissions de ces utilisateurs <br />
-                        <i class='bx bx-right-arrow-alt'></i> L'envoi des SMS manuels grâce a l'API nexah </p>
+                        <i class='bx bx-right-arrow-alt'></i> Back-office complet (Module ACL(Access Control List) avec le package Spatie
+                        pour la gestion des Utilisateurs, Rôles et permissions, gestion des beats) <br />
+                        <i class='bx bx-right-arrow-alt'></i> Front-office: (Marketplace, Panier, Follow/unfollow, Like/Dislike, Lecteur,...) </p>
                     </div>
                   </div>
                 </div>
@@ -119,4 +112,4 @@ const Bluepush = () => {
   );
 }
 
-export default Bluepush;
+export default Monbeatmaker;

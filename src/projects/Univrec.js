@@ -75,7 +75,7 @@ const Univrec = () => {
                                             <h3>informations</h3>
                                             <ul>
                                                 <li><strong>Nom de l'app</strong>: Univrec</li>
-                                                <li><strong>Category</strong>: Developpé avec le framework Laravel, Livewire, jQuery, tailwind css, Alpine js</li>
+                                                <li><strong>Stack</strong>: Laravel, Livewire, jQuery, tailwind css, Alpine js</li>
                                                 <li><strong>Entreprise</strong>: Projet scolaire</li>
                                                 {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>

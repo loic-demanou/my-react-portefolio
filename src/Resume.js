@@ -12,7 +12,7 @@ const Resume = () => {
                     <div className="col-lg-6" data-aos="fade-up">
                         <h3 className="resume-title">Education</h3>
                         <div className="resume-item">
-                            <h4>Bachelor of Technology (BTECH) En Génie Logiciel</h4> 
+                            <h4>Licence Technologique En Génie Logiciel</h4> 
                             <h5>2020 - 2021</h5>
                             <p><em>Institut Universitaire de la Côte, Douala, Cameroun</em></p>
                         </div>
@@ -29,6 +29,14 @@ const Resume = () => {
                     </div>
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                         <h3 className="resume-title">Experience Professionel</h3>
+                        <div className="resume-item">
+                            <h4>Développeur freelance</h4>
+                            <h5>De février 2022 - Avril 2022</h5>
+                            <ul>
+                                <li>Développement d'une application de gestion de stock avec les Framework Laravel et Livewire,</li>
+                                <li>Participation au développement d'un site web en fullstack NextJs + Laravel (réalisation complète du back-office)</li>
+                            </ul>
+                        </div>
                         <div className="resume-item">
                             <h4>Développeur fullstack Laravel &amp; Nextjs</h4>
                             <h5>De Novembre 2021 - Janvier 2022</h5>

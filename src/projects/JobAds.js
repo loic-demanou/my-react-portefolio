@@ -75,7 +75,7 @@ const JobAds = () => {
                                             <p>👈Cliquez sur les images pour visualiser</p>
                                             <h3>informations</h3>
                                             <ul>
-                                                <li><strong>Category</strong>: Developpé avec le framework Laravel, Ajax, jQuery, Bootstrap 4</li>
+                                                <li><strong>Stack</strong>: Laravel, Ajax, jQuery, Bootstrap 4</li>
                                                 <li><strong>Entreprise</strong>: Lyss consulting</li>
                                                 {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>

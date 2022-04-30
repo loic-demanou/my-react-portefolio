@@ -76,7 +76,7 @@ const MoviesTrailer = () => {
                       <h3>informations</h3>
                       <ul>
                         <li><strong>Nom</strong>: Mobies trailer</li>
-                        <li><strong>Category</strong>: React js, Material UI, The movie DB (TMDB) API</li>
+                        <li><strong>Stack</strong>: React js, Material UI, The movie DB (TMDB) API</li>
                         <li><strong>Entreprise</strong>: Projet personnel</li>
                         {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                         <li><strong>Nbre de participants</strong>: Seul</li>

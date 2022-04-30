@@ -1,17 +1,15 @@
-import boutique from '../Ressources/kako/boutique.JPG';
-import detail1 from '../Ressources/kako/details1.JPG';
-import panier from '../Ressources/kako/panier.JPG';
-import paiement from '../Ressources/kako/paiement page.JPG';
-import razorpay from '../Ressources/kako/razorpay page.JPG';
-import { ExternalLink } from 'react-external-link';
+import boutique from '../Ressources/MEP/besoins.PNG';
+import detail1 from '../Ressources/MEP/bon.PNG';
+import panier from '../Ressources/MEP/dashboard.PNG';
+import paiement from '../Ressources/MEP/materiels.PNG';
 
-const Ecommerce = () => {
+const Mep = () => {
     return (
-        <div className="modal fade" style={{ zIndex: "9999" }} id="reactecommerce" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal fade" style={{ zIndex: "9999" }} id="mepStock" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div className="modal-dialog modal-xl">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="staticBackdropLabel">KAKO</h5>
+                        <h5 className="modal-title" id="staticBackdropLabel">Ges-Stock</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                     </div>
                     <div className="modal-body">
@@ -54,14 +52,7 @@ const Ecommerce = () => {
                                                 </label>
                                                 <img className="big_image" src={paiement} alt="no mage yet6" />
                                             </div>
-                                            {/*--------------img05-----------------*/}
-                                            <div>
-                                                <input type="radio" id="check_10" name="check" className="r_check" />
-                                                <label htmlFor="check_10" className="on_check">
-                                                    <img className="vignette" src={razorpay} alt="no mage yet7" />
-                                                </label>
-                                                <img className="big_image" src={razorpay} alt="no mage yet8" />
-                                            </div>
+                                            
                                         </div>
 
 
@@ -73,29 +64,22 @@ const Ecommerce = () => {
                                             <p>👈Cliquez sur les images pour visualiser</p>
                                             <h3>informations</h3>
                                             <ul>
-                                                <li><strong>Nom de l'app</strong>: KAKO</li>
-                                                <li><strong>Stack</strong>: React js, Laravel, Bootstrap, Razorpay API, Paypal API</li>
+                                                <li><strong>Nom de l'app</strong>: -</li>
+                                                <li><strong>Stack</strong>: Laravel, Livewire, AlpineJs, Bootstrap, jQuery</li>
                                                 <li><strong>Entreprise</strong>: Projet personnel</li>
                                                 {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>
                                                 <li><strong>Project URL</strong>:
-                                                <ExternalLink href="https://drive.google.com/drive/folders/1JYNQuiqUoGgqfcmBxYDUTUTBCaUfhHXk">
-                                                    <span>Voir toutes les images depuis google drive</span>
-                                                </ExternalLink>
-                                                 {/* <a href="https://drive.google.com/drive/folders/1JYNQuiqUoGgqfcmBxYDUTUTBCaUfhHXk" target="_blank">Voir les images depuis google drive</a> */}
+                                                    -
                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
                                             <h2>Détails</h2>
                                             <p>
-                                                KAKO est une appli fullstack de ecommerce
+                                                Ges-Stock est une application de gestion de stock de matériel
                                             </p>
-                                            <p><strong>Mes tâches </strong>:<br />
-                                                <i class='bx bx-right-arrow-alt'></i> Un back-office qui permet la gestion des produits <br />
-                                                <i class='bx bx-right-arrow-alt'></i>Un front-office qui liste les produits et les tâches qu'on peut éffectuer dessus
-                                            ... </p>
-                                                <i class='bx bx-right-arrow-alt'></i>Systemes de paiement électronique inclus (Paypal, Razorpay)  <br />
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -118,4 +102,4 @@ const Ecommerce = () => {
     );
 }
 
-export default Ecommerce;
+export default Mep;
