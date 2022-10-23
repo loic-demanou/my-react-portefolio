@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState } from "react";
 // import $ from 'jquery'
 import dash from '../Ressources/Bluepush/Dashboard.PNG'
 import msgman from '../Ressources/Bluepush/msgmanuels.PNG'
@@ -6,11 +6,13 @@ import adduser from '../Ressources/Bluepush/adduser.PNG'
 import survey from '../Ressources/Bluepush/survey.PNG'
 import userlist from '../Ressources/Bluepush/userlist.PNG'
 import { ExternalLink } from "react-external-link";
+// import '../swiper.css'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+
 // import { Link } from "react-router-dom";
 const Bluepush = () => {
-  useEffect(() => {
-
-  }, [])
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <div className="modal fade" style={{ zIndex: "9999" }} id="bluepush" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -30,22 +32,22 @@ const Bluepush = () => {
                   <div className="col-lg-8">
 
 
-                    <div className="diapo portfolio-details-slider">
-                      {/*--------------img01-----------------*/}
+                    {/* <div className="diapo portfolio-details-slider">
+                      
                       <div className="align-items-center">
                         <input type="radio" id="check_6" name="check" className="r_check" defaultChecked="checked" />
                         <label htmlFor="check_6" className="on_check">
                           <img className="vignette" src={dash} alt="dashqsdqsd" />
                         </label>
                         <img className="big_image" src={dash} alt="dashqsdqsd big" /></div>
-                      {/*--------------img02-----------------*/}
+                      
                       <div>
                         <input type="radio" id="check_7" name="check" className="r_check" />
                         <label htmlFor="check_7" className="on_check">
                           <img className="vignette" src={msgman} alt="dashboard" />
                         </label>
                         <img className="big_image" src={msgman} alt="msg manuel" /></div>
-                      {/*--------------img03-----------------*/}
+                      
                       <div>
                         <input type="radio" id="userlistju" name="check" className="r_check" />
                         <label htmlFor="userlistju" className="on_check">
@@ -53,7 +55,7 @@ const Bluepush = () => {
                         </label>
                         <img className="big_image" src={userlist} alt="user list big" />
                       </div>
-                      {/*--------------img04-----------------*/}
+                      
                       <div>
                         <input type="radio" id="check_9" name="check" className="r_check" />
                         <label htmlFor="check_9" className="on_check">
@@ -61,7 +63,7 @@ const Bluepush = () => {
                         </label>
                         <img className="big_image" src={adduser} alt="adduser" />
                       </div>
-                      {/*--------------img05-----------------*/}
+                      
                       <div>
                         <input type="radio" id="surveyyy" name="check" className="r_check" />
                         <label htmlFor="surveyyy" className="on_check">
@@ -69,7 +71,52 @@ const Bluepush = () => {
                         </label>
                         <img className="big_image" src={survey} alt="survey big" />
                       </div>
-                    </div>
+                    </div> */}
+
+                    <>
+                      <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                          delay: 2500,
+                          disableOnInteraction: false,
+                        }}
+                        pagination={{
+                          clickable: true,
+                        }}
+                        keyboard={{
+                          enabled: true,
+                        }}
+                        navigation={true}
+                        thumbs={{ swiper: thumbsSwiper }}
+                        modules={[Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs]}
+                        className="mySwiper"
+                      >
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={dash} alt="dash big" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={msgman} alt="message big" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={userlist} alt="user list " /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={adduser} alt="adduser" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={survey} alt="survey big" /></SwiperSlide>
+                      </Swiper>
+
+                      <Swiper
+                        onSwiper={setThumbsSwiper}
+                        spaceBetween={10}
+                        slidesPerView={4}
+                        freeMode={true}
+                        watchSlidesProgress={true}
+                        modules={[FreeMode, Navigation, Thumbs]}
+                        className="mySwiper"
+                      >
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={dash} alt="dash" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={msgman} alt="msg" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={userlist} alt="user list " /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={adduser} alt="adduser" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={survey} alt="survey" /></SwiperSlide>
+                    </Swiper>
+    
+
+                    </>
 
 
                   </div>

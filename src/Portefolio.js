@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import Bluepush from "./projects/Bluepush";
 import JobAds from "./projects/JobAds";
 import Univrec from "./projects/Univrec";
+import Mep from "./projects/Mep";
 import './projects/blupush.css';
 import MoviesTrailer from "./projects/MoviesTrailer";
+import mepImg from './Ressources/MEP/dashboard.PNG'
 import Ecommerce from "./projects/Ecommerce";
 import Chatui from "./projects/Chatui";
 import bluepush from './Ressources/Bluepush/Dashboard.PNG'
-import mep from './Ressources/MEP/dashboard.PNG'
 import monbeatmaker from './Ressources/monbeatmaker/home.PNG'
 import jobad from './Ressources/JobAds/home.PNG'
 import univrec from './Ressources/univrec/home.PNG'
@@ -106,9 +107,9 @@ const Portefolio = () => {
 
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
-                            <img src={mep} className="img-fluid" alt="image5" style={{ height:"200px", width:"100%" }} />
+                            <img src={mepImg} className="img-fluid" alt="image5" style={{ height:"200px", width:"100%" }} />
                             <div className="portfolio-links">
-                                <Link to="#" data-bs-toggle="modal" data-bs-target="#reactecommerce" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
+                                <Link to="#" data-bs-toggle="modal" data-bs-target="#mepstock" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
                             </div>
                         </div>
                         <span className="mb-2">
@@ -137,7 +138,7 @@ const Portefolio = () => {
                             <img src={boutique} className="img-fluid" alt="image5" style={{ height:"200px", width:"100%" }} />
                             <div className="portfolio-links">
                                 {/* <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus" /></a> */}
-                                <Link to="#" data-bs-toggle="modal" data-bs-target="#mepStock" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
+                                <Link to="#" data-bs-toggle="modal" data-bs-target="#reactecommerce" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
                             </div>
                         </div>
                         <span className="mb-2">
@@ -194,6 +195,7 @@ const Portefolio = () => {
                 </div>
                 <Monbeatmaker />
                 <JobAds />
+                <Mep />
                 <Bluepush />
                 <Univrec />
                 <MoviesTrailer />

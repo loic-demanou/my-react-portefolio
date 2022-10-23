@@ -2,10 +2,15 @@ import boutique from '../Ressources/MEP/besoins.PNG';
 import detail1 from '../Ressources/MEP/bon.PNG';
 import panier from '../Ressources/MEP/dashboard.PNG';
 import paiement from '../Ressources/MEP/materiels.PNG';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+import { useState } from 'react';
 
 const Mep = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     return (
-        <div className="modal fade" style={{ zIndex: "9999" }} id="mepStock" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal fade" style={{ zIndex: "9999" }} id="mepstock" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div className="modal-dialog modal-xl">
                 <div className="modal-content">
                     <div className="modal-header">
@@ -21,42 +26,46 @@ const Mep = () => {
                                 <div className="row">
                                     <div className="col-lg-8">
 
-                                        <div className="diapo portfolio-details-slider swiper">
-                                            {/*--------------img01-----------------*/}
-                                            <div>
-                                                <input type="radio" id="boutique" name="check" className="r_check" defaultChecked="checked" />
-                                                <label htmlFor="boutique" className="on_check">
-                                                    <img className="vignette" src={boutique} alt="first imazd" />
-                                                </label>
-                                                <img className="big_image" src={boutique} alt="first imazd big" /></div>
-                                            {/*--------------img02-----------------*/}
-                                            <div>
-                                                <input type="radio" id="detail1" name="check" className="r_check" />
-                                                <label htmlFor="detail1" className="on_check">
-                                                    <img className="vignette" src={detail1} alt="no mage yet" />
-                                                </label>
-                                                <img className="big_image" src={detail1} alt="no mage yet2" /></div>
-                                            {/*--------------img03-----------------*/}
-                                            <div>
-                                                <input type="radio" id="paniersd" name="check" className="r_check" />
-                                                <label htmlFor="paniersd" className="on_check">
-                                                    <img className="vignette" src={panier} alt="no mage yet3" />
-                                                </label>
-                                                <img className="big_image" src={panier} alt="no mage yet4" />
-                                            </div>
-                                            {/*--------------img04-----------------*/}
-                                            <div>
-                                                <input type="radio" id="paiementdsk" name="check" className="r_check" />
-                                                <label htmlFor="paiementdsk" className="on_check">
-                                                    <img className="vignette" src={paiement} alt="no mage yet5" />
-                                                </label>
-                                                <img className="big_image" src={paiement} alt="no mage yet6" />
-                                            </div>
-                                            
-                                        </div>
+                                        <>
+                                            <Swiper
+                                                spaceBetween={30}
+                                                centeredSlides={true}
+                                                autoplay={{
+                                                delay: 2500,
+                                                disableOnInteraction: false,
+                                                }}
+                                                pagination={{
+                                                clickable: true,
+                                                }}
+                                                keyboard={{
+                                                enabled: true,
+                                                }}
+                                                navigation={true}
+                                                thumbs={{ swiper: thumbsSwiper }}
+                                                modules={[Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={boutique} alt="first imazbigd"  /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={detail1} alt="no mage big" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={panier} alt="no mage yet3 big" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={paiement} alt="no mage yet5 bg"/></SwiperSlide>
+                                            </Swiper>
 
-
-
+                                            <Swiper
+                                                onSwiper={setThumbsSwiper}
+                                                spaceBetween={10}
+                                                slidesPerView={4}
+                                                freeMode={true}
+                                                watchSlidesProgress={true}
+                                                modules={[FreeMode, Navigation, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={boutique} alt="first imazd"  /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={detail1} alt="no mage yet" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={panier} alt="no mage yet3" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={paiement} alt="no mage yet5"/></SwiperSlide>
+                                            </Swiper>
+                                        </>
 
                                     </div>
                                     <div className="col-lg-4">
@@ -85,7 +94,6 @@ const Mep = () => {
                                 </div>
                             </div>
                         </section>
-
 
                     </div>
                     <div className="modal-footer">

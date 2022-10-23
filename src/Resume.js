@@ -30,6 +30,17 @@ const Resume = () => {
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                         <h3 className="resume-title">Experience Professionel</h3>
                         <div className="resume-item">
+                            <h4>Développeur fullstack React Js &amp; Node Js</h4>
+                            <h5>De Mars 2022 - Octobre 2022</h5>
+                            <p><em>ItWebson, Abidjan, Côte d'Ivoire </em></p>
+                            <ul>
+                                <li>J'ai participation au développement d'une application de gestion de stock et facturation, système multi-boutique: 
+                                    de la commande des produits chez les fournisseurs à la livraison chez les clients <del></del>
+                                </li>
+                                {/* <li>Conception et réalisation d'un site d'annonce d'emploi avec le framework PHP Laravel  </li> */}
+                            </ul>
+                        </div>
+                        <div className="resume-item">
                             <h4>Développeur freelance</h4>
                             <h5>De février 2022 - Avril 2022</h5>
                             <ul>

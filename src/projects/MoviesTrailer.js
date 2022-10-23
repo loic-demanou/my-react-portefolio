@@ -4,8 +4,13 @@ import detail2 from '../Ressources/movie/details2.GIF'
 import filmsection from '../Ressources/movie/filmsection.GIF'
 import search from '../Ressources/movie/search.PNG'
 import { ExternalLink } from 'react-external-link'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+import { useState } from 'react';
 
 const MoviesTrailer = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   return (
 
     <div className="modal fade" style={{ zIndex: "9999" }} id="movies" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -24,50 +29,48 @@ const MoviesTrailer = () => {
                 <div className="row">
                   <div className="col-lg-8">
 
+                    <>
+                      <Swiper
+                          spaceBetween={30}
+                          centeredSlides={true}
+                          autoplay={{
+                          delay: 2500,
+                          disableOnInteraction: false,
+                          }}
+                          pagination={{
+                          clickable: true,
+                          }}
+                          keyboard={{
+                          enabled: true,
+                          }}
+                          navigation={true}
+                          thumbs={{ swiper: thumbsSwiper }}
+                          modules={[Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs]}
+                          className="mySwiper"
+                      >
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={detail2} alt="detail2 bg"  /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={trending} alt="trending bg" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={detail} alt="detail bg" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={search} alt="search bg" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={filmsection} alt="film section" /></SwiperSlide>
+                      </Swiper>
 
-                    <div className="diapo portfolio-details-slider swiper">
-                      {/*--------------img01-----------------*/}
-                      <div>
-                        <input type="radio" id="detail2" name="check" className="r_check" defaultChecked="checked" />
-                        <label htmlFor="detail2" className="on_check">
-                          <img className="vignette" src={detail2} alt="detail2" />
-                        </label>
-                        <img className="big_image" src={detail2} alt="detail2 big" /></div>
-                      {/*--------------img02-----------------*/}
-                      <div>
-                        <input type="radio" id="trending" name="check" className="r_check" />
-                        <label htmlFor="trending" className="on_check">
-                          <img className="vignette" src={trending} alt="trending" />
-                        </label>
-                        <img className="big_image" src={trending} alt="trending big" /></div>
-                      {/*--------------img03-----------------*/}
-                      <div>
-                        <input type="radio" id="details" name="check" className="r_check" />
-                        <label htmlFor="details" className="on_check">
-                          <img className="vignette" src={detail} alt="detail" />
-                        </label>
-                        <img className="big_image" src={detail} alt="detail big" />
-                      </div>
-                      {/*--------------img04-----------------*/}
-                      <div>
-                        <input type="radio" id="searchmov" name="check" className="r_check" />
-                        <label htmlFor="searchmov" className="on_check">
-                          <img className="vignette" src={search} alt="search" />
-                        </label>
-                        <img className="big_image" src={search} alt="search big" />
-                      </div>
-                      {/*--------------img05-----------------*/}
-                      <div>
-                        <input type="radio" id="filmsection" name="check" className="r_check" />
-                        <label htmlFor="filmsection" className="on_check">
-                          <img className="vignette" src={filmsection} alt="film section" />
-                        </label>
-                        <img className="big_image" src={filmsection} alt="film section big" />
-                      </div>
-                    </div>
-
-
-
+                      <Swiper
+                          onSwiper={setThumbsSwiper}
+                          spaceBetween={10}
+                          slidesPerView={4}
+                          freeMode={true}
+                          watchSlidesProgress={true}
+                          modules={[FreeMode, Navigation, Thumbs]}
+                          className="mySwiper"
+                      >
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={detail2} alt="detail2" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={trending} alt="trending" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={detail} alt="detail" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={search} alt="search"/></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={filmsection} alt="film section" /></SwiperSlide>
+                      </Swiper>
+                    </>
 
                   </div>
                   <div className="col-lg-4">

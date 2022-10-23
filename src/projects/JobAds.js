@@ -3,11 +3,15 @@
 import dashboard from '../Ressources/JobAds/Dashboard.PNG';
 import home from '../Ressources/JobAds/home.PNG';
 import jobs from '../Ressources/JobAds/jobs.PNG';
-import myads from '../Ressources/JobAds/myads.PNG';
 import details from '../Ressources/JobAds/details.PNG';
 import { ExternalLink } from 'react-external-link';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+import { useState } from 'react';
 
 const JobAds = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     return (
 
         <div className="modal fade" style={{ zIndex: "99999" }} id="findJob" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -26,47 +30,47 @@ const JobAds = () => {
                                 <div className="row">
                                     <div className="col-lg-8">
 
+                                        <>
+                                            <Swiper
+                                                spaceBetween={30}
+                                                centeredSlides={true}
+                                                autoplay={{
+                                                delay: 2500,
+                                                disableOnInteraction: false,
+                                                }}
+                                                pagination={{
+                                                clickable: true,
+                                                }}
+                                                keyboard={{
+                                                enabled: true,
+                                                }}
+                                                navigation={true}
+                                                thumbs={{ swiper: thumbsSwiper }}
+                                                modules={[Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={home} alt="homejobs bg" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={jobs} alt="jobs bg" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={dashboard} alt="dashboardjob bg" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={details} alt="detailsads" /></SwiperSlide>
+                                            </Swiper>
 
-                                        <div className="diapo portfolio-details-slider swiper">
-                                            {/*--------------img01-----------------*/}
-                                            <div>
-                                                <input type="radio" id="homeads" name="check" className="r_check" defaultChecked="checked" />
-                                                <label htmlFor="homeads" className="on_check">
-                                                    <img className="vignette" src={home} alt="homejobs" />
-                                                </label>
-                                                <img className="big_image" src={home} alt="homejobsbig" /></div>
-                                            {/*--------------img02-----------------*/}
-                                            <div>
-                                                <input type="radio" id="jobsads" name="check" className="r_check" />
-                                                <label htmlFor="jobsads" className="on_check">
-                                                    <img className="vignette" src={jobs} alt="jobs" />
-                                                </label>
-                                                <img className="big_image" src={jobs} alt="jobsbig" /></div>
-                                            {/*--------------img03-----------------*/}
-                                            <div>
-                                                <input type="radio" id="myads" name="check" className="r_check" />
-                                                <label htmlFor="myads" className="on_check">
-                                                    <img className="vignette" src={myads} alt="myads" />
-                                                </label>
-                                                <img className="big_image" src={myads} alt="myadsbig" />
-                                            </div>
-                                            {/*--------------img04-----------------*/}
-                                            <div>
-                                                <input type="radio" id="dashboardads" name="check" className="r_check" />
-                                                <label htmlFor="dashboardads" className="on_check">
-                                                    <img className="vignette" src={dashboard} alt="dashboardjob" />
-                                                </label>
-                                                <img className="big_image" src={dashboard} alt="dashboardjobbig" />
-                                            </div>
-                                            {/*--------------img05-----------------*/}
-                                            <div>
-                                                <input type="radio" id="detailsadss" name="check" className="r_check" />
-                                                <label htmlFor="detailsadss" className="on_check">
-                                                    <img className="vignette" src={details} alt="detailsads" />
-                                                </label>
-                                                <img className="big_image" src={details} alt="detailsadsbig" />
-                                            </div>
-                                        </div>
+                                            <Swiper
+                                                onSwiper={setThumbsSwiper}
+                                                spaceBetween={10}
+                                                slidesPerView={4}
+                                                freeMode={true}
+                                                watchSlidesProgress={true}
+                                                modules={[FreeMode, Navigation, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={home} alt="homejobs" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={jobs} alt="jobs" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={dashboard} alt="dashboardjob" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={details} alt="detailsads" /></SwiperSlide>
+                                            </Swiper>
+                                        </>
+
 
 
                                     </div>

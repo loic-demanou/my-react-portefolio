@@ -6,9 +6,15 @@ import overvieweb from '../Ressources/xd/chatmobile/overvieweb.PNG'
 // import discussion from '../Ressources/xd/chatmobile/discussion.PNG'
 import web1 from '../Ressources/xd/chatmobile/web1.PNG'
 import web2 from '../Ressources/xd/chatmobile/web2.PNG'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+import { useState } from 'react'
+
 // import actuality from '../Ressources/xd/chatmobile/actuality.PNG'
 
 const Chatui = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     return (
 
         <div className="modal fade" style={{ zIndex: "9999" }} id="chatui" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -27,63 +33,48 @@ const Chatui = () => {
                                 <div className="row gy-4">
                                     <div className="col-lg-8">
 
+                                        <>
+                                            <Swiper
+                                                spaceBetween={10}
+                                                centeredSlides={true}
+                                                autoplay={{
+                                                delay: 2500,
+                                                disableOnInteraction: false,
+                                                }}
+                                                pagination={{
+                                                clickable: true,
+                                                }}
+                                                keyboard={{
+                                                enabled: true,
+                                                }}
+                                                navigation={true}
+                                                thumbs={{ swiper: thumbsSwiper }}
+                                                modules={[Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img className="" style={{ height:"90%", width:'90%' }} src={overvieweb} alt="averviewweb big" /></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"90%", width:'90%' }} src={overview} alt="averview big"/></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"90%", width:'90%' }} src={overview} alt="averview bigg"/></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"90%", width:'90%' }} src={web1} alt="web1 big" /></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"90%", width:'90%' }} src={web2} alt="web2_big"/></SwiperSlide>
+                                            </Swiper>
 
-                                        <div className="diapo portfolio-details-slider swiper">
-                                            {/*--------------img01-----------------*/}
-                                            <div className="align-items-center">
-                                                <input type="radio" id="overvieweb" name="check" className="r_check" defaultChecked="checked" />
-                                                <label htmlFor="overvieweb" className="on_check">
-                                                    <img className="vignette" src={overvieweb} alt="averviewweb" />
-                                                </label>
-                                                <img className="big_image" src={overvieweb} alt="averviewweb-qsd" /></div>
-                                            {/*--------------img02-----------------*/}
-                                            <div>
-                                                <input type="radio" id="overview" name="check" className="r_check" />
-                                                <label htmlFor="overview" className="on_check">
-                                                    <img className="vignette" src={overview} alt="averview" />
-                                                </label>
-                                                <img className="big_image" src={overview} alt="averviewbig" /></div>
-                                            {/*--------------img03-----------------*/}
-                                            {/* <div>
-                                                <input type="radio" id="contact" name="check" className="r_check" />
-                                                <label htmlFor="contact" className="on_check">
-                                                    <img className="vignette" src={contact} alt="contact" />
-                                                </label>
-                                                <img className="big_image" src={contact} alt="contact-big" />
-                                            </div> */}
-                                            {/*--------------img04-----------------*/}
-                                            {/* <div>
-                                                <input type="radio" id="calls" name="check" className="r_check" />
-                                                <label htmlFor="calls" className="on_check">
-                                                    <img className="vignette" src={calls} alt="calls" />
-                                                </label>
-                                                <img className="big_image" src={calls} alt="calls_big" />
-                                            </div> */}
-                                            {/*--------------img05-----------------*/}
-                                            {/* <div>
-                                                <input type="radio" id="actuality" name="check" className="r_check" />
-                                                <label htmlFor="actuality" className="on_check">
-                                                    <img className="vignette" src={actuality} alt="actuality" />
-                                                </label>
-                                                <img className="big_image" src={actuality} alt="actuality_big" />
-                                            </div> */}
-                                            <div>
-                                                <input type="radio" id="web1" name="check" className="r_check" />
-                                                <label htmlFor="web1" className="on_check">
-                                                    <img className="vignette" src={web1} alt="web1" />
-                                                </label>
-                                                <img className="big_image" src={web1} alt="web1_big" />
-                                            </div>
-                                            {/*--------------img05-----------------*/}
-                                            <div>
-                                                <input type="radio" id="web2" name="check" className="r_check" />
-                                                <label htmlFor="web2" className="on_check">
-                                                    <img className="vignette" src={web2} alt="web2" />
-                                                </label>
-                                                <img className="big_image" src={web2} alt="web2_big" />
-                                            </div>
-                                        </div>
-
+                                            <Swiper
+                                                onSwiper={setThumbsSwiper}
+                                                spaceBetween={10}
+                                                slidesPerView={4}
+                                                freeMode={true}
+                                                watchSlidesProgress={true}
+                                                modules={[FreeMode, Navigation, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={overvieweb} alt="averviewweb" /></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={overview} alt="averview" /></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={overview} alt="averview w" /></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={web1} alt="web1" /></SwiperSlide>
+                                                <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={web2} alt="web2" /></SwiperSlide>
+                                            </Swiper>
+                                        </>
 
                                     </div>
                                     <div className="col-lg-4">

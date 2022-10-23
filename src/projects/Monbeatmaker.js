@@ -1,15 +1,13 @@
-import { useEffect } from "react";
-// import $ from 'jquery'
 import dash from '../Ressources/monbeatmaker/home.PNG'
 import msgman from '../Ressources/monbeatmaker/beatracks.PNG'
 import adduser from '../Ressources/monbeatmaker/beatdetail.PNG'
 import survey from '../Ressources/monbeatmaker/beamakerdetails.PNG'
 import { ExternalLink } from "react-external-link";
-// import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+import { useState } from 'react';
 const Monbeatmaker = () => {
-  useEffect(() => {
-
-  }, [])
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <div className="modal fade" style={{ zIndex: "9999" }} id="monbeatmaker" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -27,43 +25,46 @@ const Monbeatmaker = () => {
               <div className="container">
                 <div className="row gy-4">
                   <div className="col-lg-8">
+                    <>
+                      <Swiper
+                          spaceBetween={30}
+                          centeredSlides={true}
+                          autoplay={{
+                          delay: 2500,
+                          disableOnInteraction: false,
+                          }}
+                          pagination={{
+                          clickable: true,
+                          }}
+                          keyboard={{
+                          enabled: true,
+                          }}
+                          navigation={true}
+                          thumbs={{ swiper: thumbsSwiper }}
+                          modules={[Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs]}
+                          className="mySwiper"
+                      >
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={dash} alt="dashqs bg"   /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={msgman} alt="dashboard bg" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={adduser} alt="add bg" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={survey} alt="survey bg" /></SwiperSlide>
+                      </Swiper>
 
-
-                    <div className="diapo portfolio-details-slider">
-                      {/*--------------img01-----------------*/}
-                      <div className="align-items-center">
-                        <input type="radio" id="check_6" name="check" className="r_check" defaultChecked="checked" />
-                        <label htmlFor="check_6" className="on_check">
-                          <img className="vignette" src={dash} alt="dashqsdqsd" />
-                        </label>
-                        <img className="big_image" src={dash} alt="dashqsdqsd big" /></div>
-                      {/*--------------img02-----------------*/}
-                      <div>
-                        <input type="radio" id="check_7" name="check" className="r_check" />
-                        <label htmlFor="check_7" className="on_check">
-                          <img className="vignette" src={msgman} alt="dashboard" />
-                        </label>
-                        <img className="big_image" src={msgman} alt="msg manuel" /></div>
-                      {/*--------------img03-----------------*/}
-
-                      {/*--------------img04-----------------*/}
-                      <div>
-                        <input type="radio" id="check_9" name="check" className="r_check" />
-                        <label htmlFor="check_9" className="on_check">
-                          <img className="vignette" src={adduser} alt="add" />
-                        </label>
-                        <img className="big_image" src={adduser} alt="adduser" />
-                      </div>
-                      {/*--------------img05-----------------*/}
-                      <div>
-                        <input type="radio" id="surveyyy" name="check" className="r_check" />
-                        <label htmlFor="surveyyy" className="on_check">
-                          <img className="vignette" src={survey} alt="survey" />
-                        </label>
-                        <img className="big_image" src={survey} alt="survey big" />
-                      </div>
-                    </div>
-
+                      <Swiper
+                          onSwiper={setThumbsSwiper}
+                          spaceBetween={10}
+                          slidesPerView={4}
+                          freeMode={true}
+                          watchSlidesProgress={true}
+                          modules={[FreeMode, Navigation, Thumbs]}
+                          className="mySwiper"
+                      >
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={dash} alt="dashqsdqsd"  /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={msgman} alt="dashboard" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={adduser} alt="add" /></SwiperSlide>
+                          <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={survey} alt="survey"/></SwiperSlide>
+                      </Swiper>
+                    </>
 
                   </div>
                   <div className="col-lg-4">

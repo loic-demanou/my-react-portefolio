@@ -4,8 +4,13 @@ import login from '../Ressources/xd/univrec/login.PNG'
 import listjob from '../Ressources/xd/univrec/listjob.PNG'
 import details from '../Ressources/xd/univrec/details.PNG'
 import { ExternalLink } from 'react-external-link'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
+import { useState } from 'react';
 
 const UnivrecUI = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     return (
 
         <div className="modal fade" style={{ zIndex: "9999" }} id="univrecui" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -24,48 +29,48 @@ const UnivrecUI = () => {
                                 <div className="row">
                                     <div className="col-lg-8">
 
+                                        <>
+                                            <Swiper
+                                                spaceBetween={30}
+                                                centeredSlides={true}
+                                                autoplay={{
+                                                delay: 2500,
+                                                disableOnInteraction: false,
+                                                }}
+                                                pagination={{
+                                                clickable: true,
+                                                }}
+                                                keyboard={{
+                                                enabled: true,
+                                                }}
+                                                navigation={true}
+                                                thumbs={{ swiper: thumbsSwiper }}
+                                                modules={[Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={home} alt="home unib bg" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={overview} alt="overview bg" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={listjob} alt="list bg" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={details} alt="detailsimage bg" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={login} alt="login img bg" /></SwiperSlide>
+                                            </Swiper>
 
-                                        <div className="diapo portfolio-details-slider">
-                                            {/*--------------img01-----------------*/}
-                                            <div>
-                                                <input type="radio" id="homeunivrecui" name="check" className="r_check" defaultChecked="checked" />
-                                                <label htmlFor="homeunivrecui" className="on_check">
-                                                    <img className="vignette" src={home} alt="home unib" />
-                                                </label>
-                                                <img className="big_image" src={home} alt="home univ" /></div>
-                                            {/*--------------img02-----------------*/}
-                                            <div>
-                                                <input type="radio" id="overviewui" name="check" className="r_check" />
-                                                <label htmlFor="overviewui" className="on_check">
-                                                    <img className="vignette" src={overview} alt="overview" />
-                                                </label>
-                                                <img className="big_image" src={overview} alt="overviewbig" /></div>
-                                            {/*--------------img03-----------------*/}
-                                            <div>
-                                                <input type="radio" id="listjobui" name="check" className="r_check" />
-                                                <label htmlFor="listjobui" className="on_check">
-                                                    <img className="vignette" src={listjob} alt="filsdqsd" />
-                                                </label>
-                                                <img className="big_image" src={listjob} alt="filsdqsd" />
-                                            </div>
-                                            {/*--------------img04-----------------*/}
-                                            <div>
-                                                <input type="radio" id="detailjobui" name="check" className="r_check" />
-                                                <label htmlFor="detailjobui" className="on_check">
-                                                    <img className="vignette" src={details} alt="detailsimage" />
-                                                </label>
-                                                <img className="big_image" src={details} alt="detailsimagebig" />
-                                            </div>
-                                            {/*--------------img05-----------------*/}
-                                            <div>
-                                                <input type="radio" id="loginimgui" name="check" className="r_check" />
-                                                <label htmlFor="loginimgui" className="on_check">
-                                                    <img className="vignette" src={login} alt="login img" />
-                                                </label>
-                                                <img className="big_image" src={login} alt="login img big" />
-                                            </div>
-                                        </div>
-
+                                            <Swiper
+                                                onSwiper={setThumbsSwiper}
+                                                spaceBetween={10}
+                                                slidesPerView={4}
+                                                freeMode={true}
+                                                watchSlidesProgress={true}
+                                                modules={[FreeMode, Navigation, Thumbs]}
+                                                className="mySwiper"
+                                            >
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={home} alt="home unib" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={overview} alt="overview" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={listjob} alt="listjob" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={details} alt="detailsimage" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={login} alt="login img" /></SwiperSlide>
+                                            </Swiper>
+                                        </>
 
                                     </div>
                                     <div className="col-lg-4">

@@ -33,9 +33,9 @@ const SkillSection = () => {
                         </div>
 
                         <div className="progress">
-                            <span className="skill">React JS &amp; Next JS <i className="val">70%</i></span>
+                            <span className="skill">React JS &amp; Next JS <i className="val">75%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "70%" }} aria-valuenow={70} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
@@ -47,9 +47,9 @@ const SkillSection = () => {
                             </div>
                         </div>
                         <div className="progress">
-                            <span className="skill">REST API <i className="val">60%</i></span>
+                            <span className="skill">REST API <i className="val">65%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "65%" }} aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
