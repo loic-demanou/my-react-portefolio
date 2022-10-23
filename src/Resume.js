@@ -31,7 +31,7 @@ const Resume = () => {
                         <h3 className="resume-title">Experience Professionel</h3>
                         <div className="resume-item">
                             <h4>Développeur fullstack React Js &amp; Node Js</h4>
-                            <h5>De Mars 2022 - Octobre 2022</h5>
+                            <h5>De Mai 2022 - Octobre 2022</h5>
                             <p><em>ItWebson, Abidjan, Côte d'Ivoire </em></p>
                             <ul>
                                 <li>J'ai participation au développement d'une application de gestion de stock et facturation, système multi-boutique: 
