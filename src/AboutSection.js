@@ -1,4 +1,4 @@
-import profil from './profil.jpeg';
+import profil from './Ressources/images/profil.jpeg'
 const AboutSection = () => {
     return (
         <>

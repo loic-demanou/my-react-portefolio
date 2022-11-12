@@ -2,7 +2,7 @@
 import { ExternalLink } from 'react-external-link';
 import { HashLink as Link, NavHashLink } from 'react-router-hash-link';
 // import { NavLink } from 'react-router-dom';
-import profil from './profil.jpeg';
+import profil from './Ressources/images/profil.jpeg'
 const Sidebar = () => {
     return (
         <>

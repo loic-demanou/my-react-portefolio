@@ -1,5 +1,5 @@
-import xavier from './xavier.jpg';
-import julio from './julio.jpg';
+import xavier from './Ressources/images/xavier.jpg';
+import julio from './Ressources/images/julio.jpg';
 const Testimonial = () => {
     return (
         <>

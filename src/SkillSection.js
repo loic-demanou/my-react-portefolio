@@ -10,17 +10,17 @@ const SkillSection = () => {
                     <div className="col-lg-6" data-aos="fade-up">
                         <center className="">👉Développement web</center>
                         <div className="progress">
-                            <span className="skill">HTML/CSS/Bootstrap/Tailwind css <i className="val">80%</i></span>
+                            <span className="skill">HTML/CSS/Bootstrap/Tailwind css <i className="val">85%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div className="progress-bar" role="progressbar" style={{ width: "85%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
                         </div>
 
                         <div className="progress">
-                            <span className="skill">JavaScript/jQuery <i className="val">75%</i></span>
+                            <span className="skill">JavaScript/jQuery <i className="val">80%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
@@ -33,9 +33,9 @@ const SkillSection = () => {
                         </div>
 
                         <div className="progress">
-                            <span className="skill">React JS &amp; Next JS <i className="val">75%</i></span>
+                            <span className="skill">React JS &amp; Next JS <i className="val">80%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
@@ -47,9 +47,9 @@ const SkillSection = () => {
                             </div>
                         </div>
                         <div className="progress">
-                            <span className="skill">REST API <i className="val">65%</i></span>
+                            <span className="skill">REST API <i className="val">80%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "65%" }} aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
