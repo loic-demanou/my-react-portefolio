@@ -40,16 +40,23 @@ const SkillSection = () => {
                             </div>
                         </div>
                         <div className="progress">
-                            <span className="skill">NodeJs, Express, MongoDB <i className="val">60%</i></span>
+                            <span className="skill">NodeJs, Express, MongoDB <i className="val">65%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "65%" }} aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
                         <div className="progress">
                             <span className="skill">REST API <i className="val">80%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "80%" }} aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="progress">
+                            <span className="skill">React Native <i className="val">50%</i></span>
+                            <div className="progress-bar-wrap">
+                                <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>
@@ -65,9 +72,9 @@ const SkillSection = () => {
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                         <center className="">👉Autres Compétences</center>
                         <div className="progress">
-                            <span className="skill">UI/UX design <i className="val">65%</i></span>
+                            <span className="skill">UI/UX design <i className="val">70%</i></span>
                             <div className="progress-bar-wrap">
-                                <div className="progress-bar" role="progressbar" style={{ width: "65%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "70%" }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
                                 </div>
                             </div>
                         </div>

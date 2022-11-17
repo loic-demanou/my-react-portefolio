@@ -31,29 +31,30 @@ const Resume = () => {
                         <h3 className="resume-title">Experience Professionel</h3>
                         <div className="resume-item">
                             <h4>Développeur fullstack React Js &amp; Node Js</h4>
-                            <h5>De Mai 2022 - Octobre 2022</h5>
+                            <h5>De Mai 2022 - Novembre 2022</h5>
                             <p><em>ItWebson, Abidjan, Côte d'Ivoire </em></p>
                             <ul>
-                                <li>J'ai participation au développement d'une application de gestion de stock et facturation, système multi-boutique: 
+                                <li>Participation au développement d'une application de gestion de stock et facturation, système multi-boutiques: 
                                     de la commande des produits chez les fournisseurs à la livraison chez les clients <del></del>
                                 </li>
                                 {/* <li>Conception et réalisation d'un site d'annonce d'emploi avec le framework PHP Laravel  </li> */}
                             </ul>
                         </div>
                         <div className="resume-item">
-                            <h4>Développeur freelance</h4>
+                            <h4>Développeur fullstack Laravel &amp; ReactJs</h4>
                             <h5>De février 2022 - Avril 2022</h5>
+                            <p><em>MEP Engineering, Abidjan, Côte d'Ivoire </em></p>
                             <ul>
                                 <li>Développement d'une application de gestion de stock avec les Framework Laravel et Livewire,</li>
                                 <li>Participation au développement d'un site web en fullstack NextJs + Laravel (réalisation complète du back-office)</li>
                             </ul>
                         </div>
                         <div className="resume-item">
-                            <h4>Développeur fullstack Laravel &amp; Nextjs</h4>
+                            <h4>Développeur fullstack Laravel &amp; ReactJs</h4>
                             <h5>De Novembre 2021 - Janvier 2022</h5>
                             <p><em>Parazit music, Douala, Cameroun </em></p>
                             <ul>
-                                <li>J'ai participation au développement d'un site de vente de beats
+                                <li>Participation au développement d'un site de vente de beats
                                             musicaux avec Laravel et le framework front-end Nextjs, plus précisement de,  
                                             (Gestion des utilisteurs et roles, Marketplace, Panier, Gestion des
                                         beats et playlists, Système de Following et Favori, Back-Office
