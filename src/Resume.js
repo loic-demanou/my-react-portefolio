@@ -30,8 +30,18 @@ const Resume = () => {
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                         <h3 className="resume-title">Experience Professionel</h3>
                         <div className="resume-item">
+                            <h4>Développeur fullstack </h4>
+                            <h5>De Février 2023 à nos jours</h5>
+                            <p><em>Africa Digitalizer, Abidjan, Côte d'Ivoire </em></p>
+                            {/* <ul>
+                                <li>Participation au développement d'une application de gestion de stock et facturation, système multi-boutiques: 
+                                    de la commande des produits chez les fournisseurs à la livraison chez les clients <del></del>
+                                </li>
+                            </ul> */}
+                        </div>
+                        <div className="resume-item">
                             <h4>Développeur fullstack React Js &amp; Node Js</h4>
-                            <h5>De Mai 2022 - Novembre 2022</h5>
+                            <h5>De Mai 2022 - Janvier 2023</h5>
                             <p><em>ItWebson, Abidjan, Côte d'Ivoire </em></p>
                             <ul>
                                 <li>Participation au développement d'une application de gestion de stock et facturation, système multi-boutiques: 
