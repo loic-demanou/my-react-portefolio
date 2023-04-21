@@ -39,9 +39,9 @@ function App() {
 
         {/* <Switch> */}
         <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
-          <div className="hero-container" data-aos="fade-in">
-            <h1>Demanou Loïc</h1>
-            <p>Je suis Développeur web full-stack React Js | Laravel | Node Js</p>
+          <div className="hero-container mx-2" data-aos="fade-in">
+            <h1>Hey, je suis Demanou Loïc</h1>
+            <p>Développeur web full-stack</p>
             {/* <button className="btn btn-primary btn-lg">Télécharger mon CV <i class='bx bx-cloud-download'></i></button> */}
             {/* <ExternalLink href="https://drive.google.com/file/d/1Gp_ygtOMcFKzD9Uv5L1IMztHtNN4xCUP/view?usp=sharing"> */}
               <span className="btn btn-primary btn-lg text-white">
