@@ -30,7 +30,7 @@ const Resume = () => {
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                         <h3 className="resume-title">Experience Professionel</h3>
                         <div className="resume-item">
-                            <h4>Développeur fullstack </h4>
+                            <h4>Développeur web </h4>
                             <h5>De Février 2023 à nos jours</h5>
                             <p><em>Africa Digitalizer, Abidjan, Côte d'Ivoire </em></p>
                             {/* <ul>
@@ -47,7 +47,6 @@ const Resume = () => {
                                 <li>Participation au développement d'une application de gestion de stock et facturation, système multi-boutiques: 
                                     de la commande des produits chez les fournisseurs à la livraison chez les clients <del></del>
                                 </li>
-                                {/* <li>Conception et réalisation d'un site d'annonce d'emploi avec le framework PHP Laravel  </li> */}
                             </ul>
                         </div>
                         <div className="resume-item">
@@ -70,7 +69,6 @@ const Resume = () => {
                                         beats et playlists, Système de Following et Favori, Back-Office
                                         complet, ...)
                                 </li>
-                                {/* <li>Conception et réalisation d'un site d'annonce d'emploi avec le framework PHP Laravel  </li> */}
                             </ul>
                         </div>
                         <div className="resume-item">
@@ -92,8 +90,6 @@ const Resume = () => {
                                 <li>Développement frontend en HTML, CSS et JS</li>
                                 <li>Analyse des besoins utilisateurs et création d’un cahier des
                                 charges technique</li>
-                                {/* <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                      <li>Created 4+ design presentations and proposals a month for clients and account managers</li> */}
                             </ul>
                         </div>
                     </div>
