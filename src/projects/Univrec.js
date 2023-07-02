@@ -4,6 +4,7 @@ import adminjob from '../Ressources/univrec/adminjobs.PNG'
 import proposals from '../Ressources/univrec/proposals.PNG'
 import chat from '../Ressources/univrec/home.PNG'
 import login from '../Ressources/univrec/login.PNG'
+import details from '../Ressources/univrec/details.PNG'
 import { ExternalLink } from 'react-external-link'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
@@ -50,6 +51,7 @@ const Univrec = () => {
                                                 className="mySwiper"
                                             >
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={home} alt="home unib bg"  /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={details} alt="details bg" /></SwiperSlide>
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={adminjob} alt="adminjob bg" /></SwiperSlide>
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={proposals} alt="filsdqsd bg" /></SwiperSlide>
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={chat} alt="chatimage bg" /></SwiperSlide>
@@ -66,6 +68,7 @@ const Univrec = () => {
                                                 className="mySwiper"
                                             >
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={home} alt="home unib" /></SwiperSlide>
+                                                <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={details} alt="details" /></SwiperSlide>
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={adminjob} alt="adminjob" /></SwiperSlide>
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={proposals} alt="filsdqsd" /></SwiperSlide>
                                                 <SwiperSlide><img style={{ height:"100%", width:'100%' }} src={chat} alt="chatimage" /></SwiperSlide>
@@ -82,10 +85,8 @@ const Univrec = () => {
                                                 <li><strong>Nom de l'app</strong>: Univrec</li>
                                                 <li><strong>Stack</strong>: Laravel, Livewire, jQuery, tailwind css, Alpine js</li>
                                                 <li><strong>Entreprise</strong>: Projet scolaire</li>
-                                                {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>
                                                 <li><strong>Project URL</strong> :
-                                                    {/* <a href="#">aucun</a> */}
                                                     <ExternalLink href="http://univrec.herokuapp.com/">
                                                         <span> univrec.herokuapp.com</span>
                                                     </ExternalLink>
@@ -117,7 +118,6 @@ const Univrec = () => {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        {/* <button type="button" className="btn btn-primary">Understood</button> */}
                     </div>
                 </div>
             </div>

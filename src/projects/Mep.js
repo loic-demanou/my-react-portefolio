@@ -76,11 +76,7 @@ const Mep = () => {
                                                 <li><strong>Nom de l'app</strong>: -</li>
                                                 <li><strong>Stack</strong>: Laravel, Livewire, AlpineJs, Bootstrap, jQuery</li>
                                                 <li><strong>Entreprise</strong>: Projet personnel</li>
-                                                {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>
-                                                <li><strong>Project URL</strong>:
-                                                    -
-                                                </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
@@ -98,7 +94,6 @@ const Mep = () => {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        {/* <button type="button" className="btn btn-primary">Understood</button> */}
                     </div>
                 </div>
             </div>

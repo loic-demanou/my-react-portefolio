@@ -3,7 +3,7 @@ import home from '../Ressources/xd/univrec/home.PNG'
 import login from '../Ressources/xd/univrec/login.PNG'
 import listjob from '../Ressources/xd/univrec/listjob.PNG'
 import details from '../Ressources/xd/univrec/details.PNG'
-import { ExternalLink } from 'react-external-link'
+// import { ExternalLink } from 'react-external-link'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
 import { useState } from 'react';
@@ -17,7 +17,7 @@ const UnivrecUI = () => {
             <div className="modal-dialog modal-xl">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="staticBackdropLabel">Univrec</h5>
+                        <h5 className="modal-title" id="staticBackdropLabel">UnivrecUI</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                     </div>
                     <div className="modal-body">
@@ -81,14 +81,6 @@ const UnivrecUI = () => {
                                                 <li><strong>Nom de l'app</strong>: Univrec UI</li>
                                                 <li><strong>Category</strong>: Réalisé avec Adobe XD</li>
                                                 <li><strong>Entreprise</strong>: Projet scolaire</li>
-                                                {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
-                                                <li><strong>Nbre de participants</strong>: Seul</li>
-                                                <li><strong>Project URL</strong>:
-                                                    {/* <a href="https://drive.google.com/drive/folders/1xLtMSeAf5sTdQeVMzTmuQ-fhe3GqKgfu" target="_blank">Ouvrir le lien des images de la maquette</a> */}
-                                                    <ExternalLink href="https://drive.google.com/drive/folders/1xLtMSeAf5sTdQeVMzTmuQ-fhe3GqKgfu">
-                                                        <span> Voir toutes les images depuis google drive</span>
-                                                    </ExternalLink>
-                                                </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
@@ -106,7 +98,6 @@ const UnivrecUI = () => {
                                                 <i class='bx bx-right-arrow-alt'></i> page de chat <br />
                                                 <i class='bx bx-right-arrow-alt'></i> page des états des différentes demandes <br />
                                                 <i class='bx bx-right-arrow-alt'></i> Editeur de CV inclus <br />
-                                                {/* <i class='bx bx-right-arrow-alt'></i> Connexions avec google */}
                                             </p>
                                         </div>
                                     </div>
@@ -118,7 +109,6 @@ const UnivrecUI = () => {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        {/* <button type="button" className="btn btn-primary">Understood</button> */}
                     </div>
                 </div>
             </div>

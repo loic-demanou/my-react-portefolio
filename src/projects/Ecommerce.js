@@ -3,7 +3,7 @@ import detail1 from '../Ressources/kako/details1.JPG';
 import panier from '../Ressources/kako/panier.JPG';
 import paiement from '../Ressources/kako/paiement page.JPG';
 import razorpay from '../Ressources/kako/razorpay page.JPG';
-import { ExternalLink } from 'react-external-link';
+// import { ExternalLink } from 'react-external-link';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
@@ -82,14 +82,7 @@ const Ecommerce = () => {
                                                 <li><strong>Nom de l'app</strong>: KAKO</li>
                                                 <li><strong>Stack</strong>: React js, Laravel, Bootstrap, Razorpay API, Paypal API</li>
                                                 <li><strong>Entreprise</strong>: Projet personnel</li>
-                                                {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                                                 <li><strong>Nbre de participants</strong>: Seul</li>
-                                                <li><strong>Project URL</strong>:
-                                                <ExternalLink href="https://drive.google.com/drive/folders/1JYNQuiqUoGgqfcmBxYDUTUTBCaUfhHXk">
-                                                    <span>Voir toutes les images depuis google drive</span>
-                                                </ExternalLink>
-                                                 {/* <a href="https://drive.google.com/drive/folders/1JYNQuiqUoGgqfcmBxYDUTUTBCaUfhHXk" target="_blank">Voir les images depuis google drive</a> */}
-                                                </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
@@ -112,7 +105,6 @@ const Ecommerce = () => {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        {/* <button type="button" className="btn btn-primary">Understood</button> */}
                     </div>
                 </div>
             </div>

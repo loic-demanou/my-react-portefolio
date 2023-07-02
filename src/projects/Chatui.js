@@ -1,16 +1,11 @@
-import { ExternalLink } from 'react-external-link'
+// import { ExternalLink } from 'react-external-link'
 import overview from '../Ressources/xd/chatmobile/overview.PNG'
 import overvieweb from '../Ressources/xd/chatmobile/overvieweb.PNG'
-// import contact from '../Ressources/xd/chatmobile/contact.PNG'
-// import calls from '../Ressources/xd/chatmobile/calls.PNG'
-// import discussion from '../Ressources/xd/chatmobile/discussion.PNG'
 import web1 from '../Ressources/xd/chatmobile/web1.PNG'
 import web2 from '../Ressources/xd/chatmobile/web2.PNG'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
 import { useState } from 'react'
-
-// import actuality from '../Ressources/xd/chatmobile/actuality.PNG'
 
 const Chatui = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -84,14 +79,6 @@ const Chatui = () => {
                                             <ul>
                                                 <li><strong>Category</strong>: Maquette d'application en version web et mobile </li>
                                                 <li><strong>Entreprise</strong>: Projet personnel</li>
-                                                {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
-                                                <li><strong>Nbre de participants</strong>: Seul</li>
-                                                <li><strong>Project URL</strong>:
-                                                    {/* <a href="https://drive.google.com/drive/folders/1yiyKQUGvEoHVfNrPHtzFqAIhjJYu58ER" target="_blank">Ouvrir le lien google des images des maquettes</a> */}
-                                                    <ExternalLink href="https://drive.google.com/drive/folders/1yiyKQUGvEoHVfNrPHtzFqAIhjJYu58ER">
-                                                        <span> Voir toutes les images depuis google drive</span>
-                                                    </ExternalLink>
-                                                </li>
                                             </ul>
                                         </div>
                                         <div className="portfolio-description">
@@ -99,10 +86,6 @@ const Chatui = () => {
                                             <p>
                                                 Maquette d'une application de chat en version mobile et web effectué avec Adobe XD
                                             </p>
-                                            {/* <p><strong>Mes tâches </strong>:<br />
-                                                <i class='bx bx-right-arrow-alt'></i> Module ACL(Access Control List) avec le package Spatie
-                                                pour la gestion des Utilisateurs, Rôles et des permissions de ces utilisateurs <br />
-                                                <i class='bx bx-right-arrow-alt'></i> L'envoi des SMS manuels grâce a l'API nexah </p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +96,6 @@ const Chatui = () => {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        {/* <button type="button" className="btn btn-primary">Understood</button> */}
                     </div>
                 </div>
             </div>

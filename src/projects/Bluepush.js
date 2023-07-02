@@ -1,12 +1,11 @@
 import { useState } from "react";
-// import $ from 'jquery'
 import dash from '../Ressources/Bluepush/Dashboard.PNG'
 import msgman from '../Ressources/Bluepush/msgmanuels.PNG'
 import adduser from '../Ressources/Bluepush/adduser.PNG'
 import survey from '../Ressources/Bluepush/survey.PNG'
 import userlist from '../Ressources/Bluepush/userlist.PNG'
-import { ExternalLink } from "react-external-link";
-// import '../swiper.css'
+import login from '../Ressources/Bluepush/login.PNG'
+import msgContact from '../Ressources/Bluepush/msgContact.PNG'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, Keyboard, FreeMode, Thumbs } from "swiper";
 
@@ -93,6 +92,8 @@ const Bluepush = () => {
                         className="mySwiper"
                       >
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={dash} alt="dash big" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={login} alt="login big" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={msgContact} alt="message big" /></SwiperSlide>
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={msgman} alt="message big" /></SwiperSlide>
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={userlist} alt="user list " /></SwiperSlide>
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={adduser} alt="adduser" /></SwiperSlide>
@@ -109,6 +110,8 @@ const Bluepush = () => {
                         className="mySwiper"
                       >
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={dash} alt="dash" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={login} alt="msg" /></SwiperSlide>
+                        <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={msgContact} alt="msg" /></SwiperSlide>
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={msgman} alt="msg" /></SwiperSlide>
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={userlist} alt="user list " /></SwiperSlide>
                         <SwiperSlide><img className="" style={{ height:"100%", width:'100%' }} src={adduser} alt="adduser" /></SwiperSlide>
@@ -128,14 +131,7 @@ const Bluepush = () => {
                         <li><strong>Nom</strong>: Bluepush</li>
                         <li><strong>Stack</strong>: Laravel, Ajax, jQuery, Nexah API, Bootstrap 4</li>
                         <li><strong>Entreprise</strong>: Lyss consulting</li>
-                        {/* <li><strong>Project date</strong>: 01 March, 2020</li> */}
                         <li><strong>Nbre de participants</strong>: 03</li>
-                        <li><strong>Project URL</strong>:
-                          {/* <a target="_blank" href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF">Ouvrir le lien google des images du projet</a> */}
-                          <ExternalLink href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF">
-                            <span> Voir toutes les images depuis google drive</span>
-                          </ExternalLink>
-                        </li>
                       </ul>
                     </div>
                     <div className="portfolio-description">
@@ -157,7 +153,6 @@ const Bluepush = () => {
           </div>
           <div className="modal-footer">
             <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-            {/* <button type="button" className="btn btn-primary">Understood</button> */}
           </div>
         </div>
       </div>

@@ -142,7 +142,7 @@ const Portefolio = () => {
                             <img src={jobad} className="img-fluid" alt="image2" style={{ height:"200px", width:"100%" }} />
                             <div className="portfolio-links">
                                 {/* <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus" /></a> */}
-                                <Link to="#" data-bs-toggle="modal" data-bs-target="#findJob" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
+                                <Link to="#" data-bs-toggle="modal" data-bs-target="#jobAds" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
                             </div>
                         </div>
                         <span className="mb-2">
