@@ -12,13 +12,11 @@ const Sidebar = () => {
                         <img src={profil} alt="Profile imagjjje" className="img-fluid rounded-circle" />
                         <h1 className="text-light"><Link to="#">Demanou Loïc</Link></h1>
                         <div className="social-links mt-3 text-center">
-                            <ExternalLink href="https://www.linkedin.com/in/loic-demanou-683215204" className="linkedin"><i className="bx bxl-linkedin" /></ExternalLink>
+                            <ExternalLink href="https://linkedin.com/in/loic-demanou-dev" className="linkedin"><i className="bx bxl-linkedin" /></ExternalLink>
                             <ExternalLink href="https://github.com/loic-demanou" className="twitter"><i className="bx bxl-github" /></ExternalLink>
                             {/* <ExternalLink href="live:.cid.cce7389a7fc5b513" className="google-plus"><i className="bx bxl-skype" /></ExternalLink> */}
                             <ExternalLink href="https://web.facebook.com/loic.demanou.7/" className="facebook"><i className="bx bxl-facebook" /></ExternalLink>
                             {/* <Link to="#" className="linkedin"><i className="bx bxl-linkedin" /></Link>
-                            <Link to="#" className="twitter"><i class='bx bxl-github'></i></Link>
-                            <Link to="#" className="google-plus"><i className="bx bxl-skype" /></Link>
                             <Link to="#" className="facebook"><i className="bx bxl-facebook" /></Link> */}
                             {/* <Link to="#" className="instagram"><i className="bx bxl-instagram" /></Link> */}
                         </div>
