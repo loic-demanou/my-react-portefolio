@@ -17,7 +17,7 @@ const MoviesTrailer = () => {
       <div className="modal-dialog modal-xl">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="staticBackdropLabel">MociesTrailer</h5>
+            <h5 className="modal-title" id="staticBackdropLabel">MoviesTrailer</h5>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
           </div>
           <div className="modal-body">
@@ -82,7 +82,7 @@ const MoviesTrailer = () => {
                         <li><strong>Stack</strong>: React js, Material UI, The movie DB (TMDB) API</li>
                         <li><strong>Entreprise</strong>: Projet personnel</li>
                         <li><strong>Nbre de participants</strong>: Seul</li>
-                        <li><strong>Project URL</strong> :
+                        <li><strong>Démo</strong> : &nbsp;
                           <ExternalLink href="https://moviestrailer.netlify.app">
                             <span> moviestrailer.netlify.app</span>
                           </ExternalLink>

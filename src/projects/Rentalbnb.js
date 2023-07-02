@@ -82,7 +82,7 @@ const Rentalbnb = () => {
                         <li><strong>Nom</strong>: Rentalbnb</li>
                         <li><strong>Stack</strong>: NextJs, TypeScript, TailwindCss, MongoDB</li>
                         <li><strong>Nbre de participants</strong>: 0</li>
-                        <li><strong>Project URL</strong> : 
+                        <li><strong>Démo</strong> : &nbsp;
                           <ExternalLink href="https://rentalbnb.vercel.app/" />
                         </li>
                       </ul>

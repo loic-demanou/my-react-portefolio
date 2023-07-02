@@ -62,7 +62,22 @@ const Portefolio = () => {
                     </div>
 
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <ExternalLink href="https://monbeatmaker.com/">
+                        <ExternalLink href="https://moviestrailer.netlify.app">
+                            <div className="portfolio-wrap">
+                                <img src={movie} className="img-fluid" style={{ height:"200px", width:"100%" }}  alt="image4" />
+                                <div className="portfolio-links">
+                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#movies" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
+                                </div>
+                            </div>
+                        </ExternalLink>
+                        <span className="mb-2">
+                            <center><strong>Movies Trailer</strong></center>
+                            <center className="fst-italic">Site de bandes annonces de films &amp; séries</center>
+                        </span>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <ExternalLink href="https://bantubeat.com/">
                             <div className="portfolio-wrap">
                                 <img src={monbeatmaker} className="img-fluid" style={{ height:"200px", width:"100%" }}  alt="image1" />
                                 <div className="portfolio-links">
@@ -93,20 +108,6 @@ const Portefolio = () => {
                         </span>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <ExternalLink href="https://moviestrailer.netlify.app">
-                            <div className="portfolio-wrap">
-                                <img src={movie} className="img-fluid" style={{ height:"200px", width:"100%" }}  alt="image4" />
-                                <div className="portfolio-links">
-                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#movies" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
-                                </div>
-                            </div>
-                        </ExternalLink>
-                        <span className="mb-2">
-                            <center><strong>Movies Trailer</strong></center>
-                            <center className="fst-italic">Site de bandes annonces de films &amp; séries</center>
-                        </span>
-                    </div>
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
                             <img src={bluepush} className="img-fluid" alt="image1" style={{ height:"200px", width:"100%" }} />

@@ -76,11 +76,8 @@ const Monbeatmaker = () => {
                         <li><strong>Stack</strong>: NextJs, Laravel, TailwindCss</li>
                         <li><strong>Entreprise</strong>: Parazit Music</li>
                         <li><strong>Nbre de participants</strong>: 0</li>
-                        <li><strong>Project URL</strong>:
-                          {/* <a target="_blank" href="https://drive.google.com/drive/folders/1nfYkiIBiWzLgACpQF_OeFT0ZmDcHxkuF">Ouvrir le lien google des images du projet</a> */}
-                          <ExternalLink href="https://monbeatmaker.com/">
-                            {/* <span> https://monbeatmaker.com/</span> */}
-                          </ExternalLink>
+                        <li><strong>Démo</strong> : &nbsp;
+                          <ExternalLink href="https://bantubeat.com/" />
                         </li>
                       </ul>
                     </div>
