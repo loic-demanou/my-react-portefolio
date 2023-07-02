@@ -44,7 +44,10 @@ const Resume = () => {
                             <h5>De Mai 2022 - Janvier 2023</h5>
                             <p><em>ItWebson, Abidjan, Côte d'Ivoire </em></p>
                             <ul>
-                                <li>Participation au développement d'une application de gestion de stock et facturation, système multi-boutiques: 
+                                <li>
+                                Principalement développeur front-end dans un projet de conception d'une ERP utilisée par une entreprise pour
+                                gérer ses différentes sucursales dans tout le pays.
+                                    Gestion de stock et facturation, système multi-boutiques: 
                                     de la commande des produits chez les fournisseurs à la livraison chez les clients <del></del>
                                 </li>
                             </ul>
@@ -87,9 +90,8 @@ const Resume = () => {
                             <h5>De juillet 2019 - septembre 2019</h5>
                             <p><em>UPTIMA CM, Douala, Cameroun</em></p>
                             <ul>
-                                <li>Développement frontend en HTML, CSS et JS</li>
-                                <li>Analyse des besoins utilisateurs et création d’un cahier des
-                                charges technique</li>
+                                <li>Apprentissage des technologies web (Développement frontend en HTML, CSS et JS)</li>
+                                <li>Analyse des besoins utilisateurs et création d’un cahier des charges technique</li>
                             </ul>
                         </div>
                     </div>

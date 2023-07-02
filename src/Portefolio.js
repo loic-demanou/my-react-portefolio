@@ -10,6 +10,7 @@ import Ecommerce from "./projects/Ecommerce";
 import Chatui from "./projects/Chatui";
 import bluepush from './Ressources/Bluepush/Dashboard.PNG'
 import monbeatmaker from './Ressources/monbeatmaker/home.PNG'
+import rentalbnb from './Ressources/rentalbnb/home.PNG'
 import jobad from './Ressources/JobAds/home.PNG'
 import univrec from './Ressources/univrec/home.PNG'
 import movie from './Ressources/movie/trending.PNG'
@@ -19,6 +20,7 @@ import UnivrecUI from "./projects/UnivrecUI";
 import boutique from './Ressources/kako/boutique.JPG';
 import { ExternalLink } from "react-external-link";
 import Monbeatmaker from "./projects/Monbeatmaker";
+import Rentalbnb from "./projects/Rentalbnb";
 
 
 const Portefolio = () => {
@@ -42,6 +44,23 @@ const Portefolio = () => {
                     </div>
                 </div>
                 <div className="row portfolio-container" data-aos="fade-up" data-aos-delay={100}>
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <ExternalLink href="https://rentalbnb.vercel.app/">
+                            <div className="portfolio-wrap">
+                                <img src={rentalbnb} className="img-fluid" style={{ height:"200px", width:"100%" }}  alt="image1" />
+                                <div className="portfolio-links">
+                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#rentalbnb" title="More Details">
+                                        Détails <i class='bx bx-align-left'></i>
+                                    </Link>
+                                </div>
+                            </div>
+                        </ExternalLink>
+                        <span className="mb-2">
+                            <center><strong>Rentalbnb</strong></center>
+                            <center className="fst-italic">Clône de Airbnb</center>
+                        </span>
+                    </div>
+
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <ExternalLink href="https://monbeatmaker.com/">
                             <div className="portfolio-wrap">
@@ -193,6 +212,7 @@ const Portefolio = () => {
                         </div>
                     </div> */}
                 </div>
+                <Rentalbnb />
                 <Monbeatmaker />
                 <JobAds />
                 <Mep />
