@@ -21,6 +21,8 @@ import boutique from './Ressources/kako/boutique.JPG';
 import { ExternalLink } from "react-external-link";
 import Monbeatmaker from "./projects/Monbeatmaker";
 import Rentalbnb from "./projects/Rentalbnb";
+import proforma from './Ressources/itwebson/proforma.jpg';
+import Itwebson from "./projects/Itwebson";
 
 
 const Portefolio = () => {
@@ -62,21 +64,6 @@ const Portefolio = () => {
                     </div>
 
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <ExternalLink href="https://moviestrailer.netlify.app">
-                            <div className="portfolio-wrap">
-                                <img src={movie} className="img-fluid" style={{ height:"200px", width:"100%" }}  alt="image4" />
-                                <div className="portfolio-links">
-                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#movies" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
-                                </div>
-                            </div>
-                        </ExternalLink>
-                        <span className="mb-2">
-                            <center><strong>Movies Trailer</strong></center>
-                            <center className="fst-italic">Site de bandes annonces de films &amp; séries</center>
-                        </span>
-                    </div>
-
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <ExternalLink href="https://bantubeat.com/">
                             <div className="portfolio-wrap">
                                 <img src={monbeatmaker} className="img-fluid" style={{ height:"200px", width:"100%" }}  alt="image1" />
@@ -94,20 +81,35 @@ const Portefolio = () => {
                     </div>
 
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <ExternalLink href="http://univrec.herokuapp.com/">
+                        <ExternalLink href="https://moviestrailer.netlify.app">
                             <div className="portfolio-wrap">
-                                <img src={univrec} className="img-fluid" style={{ height:"200px", width:"100%" }} alt="image3" />
+                                <img src={movie} className="img-fluid" style={{ height:"200px", width:"100%" }}  alt="image4" />
                                 <div className="portfolio-links">
-                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#univrec" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
+                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#movies" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
                                 </div>
                             </div>
                         </ExternalLink>
                         <span className="mb-2">
-                            <center><strong>Univrec</strong></center>
-                            <center className="fst-italic">Application web de recrutement universitaire</center>
+                            <center><strong>Movies Trailer</strong></center>
+                            <center className="fst-italic">Site de bandes annonces de films &amp; séries</center>
                         </span>
                     </div>
 
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div className="portfolio-wrap">
+                            <img src={proforma} className="img-fluid" alt="image1" style={{ height:"200px", width:"100%" }} />
+                            <div className="portfolio-links">
+                                <Link to="#" data-bs-toggle="modal" data-bs-target="#itwebson1" title="More Details">
+                                    Détails <i class='bx bx-align-left'></i>
+                                </Link>
+                            </div>
+                        </div>
+                        <span className="mb-2">
+                            <center><strong>Itwebson</strong></center>
+                            <center className="fst-italic">Application entreprise de gestion</center>
+                        </span>
+                    </div>
+                    
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
                             <img src={bluepush} className="img-fluid" alt="image1" style={{ height:"200px", width:"100%" }} />
@@ -135,6 +137,21 @@ const Portefolio = () => {
                         <span className="mb-2">
                             <center><strong>MEP Ges-Stock</strong></center>
                             <center className="fst-italic">Application de suivi chantier et gestion de stock</center>
+                        </span>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <ExternalLink href="http://univrec.herokuapp.com/">
+                            <div className="portfolio-wrap">
+                                <img src={univrec} className="img-fluid" style={{ height:"200px", width:"100%" }} alt="image3" />
+                                <div className="portfolio-links">
+                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#univrec" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
+                                </div>
+                            </div>
+                        </ExternalLink>
+                        <span className="mb-2">
+                            <center><strong>Univrec</strong></center>
+                            <center className="fst-italic">Application web de recrutement universitaire</center>
                         </span>
                     </div>
 
@@ -171,7 +188,6 @@ const Portefolio = () => {
                         <div className="portfolio-wrap">
                             <img src={chat} className="img-fluid" alt="image6" style={{ height:"200px", width:"100%" }} />
                             <div className="portfolio-links">
-                                {/* <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 3"><i className="bx bx-plus" /></a> */}
                                 <Link to="#" data-bs-toggle="modal" data-bs-target="#chatui" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
                             </div>
                         </div>
@@ -185,7 +201,6 @@ const Portefolio = () => {
                         <div className="portfolio-wrap">
                             <img src={univrecuioverview} className="img-fluid" alt="image7" style={{ height:"200px", width:"100%" }} />
                             <div className="portfolio-links">
-                                {/* <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 1"><i className="bx bx-plus" /></a> */}
                                 <Link to="#" data-bs-toggle="modal" data-bs-target="#univrecui" title="More Details">Détails <i class='bx bx-align-left'></i></Link>
                             </div>
                         </div>
@@ -194,29 +209,12 @@ const Portefolio = () => {
                             <center className="fst-italic">UI design de Univrec l'appli de recrutement universitaire</center>
                         </span>
                     </div>
-                    {/* <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="image8" />
-                            <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Card 3"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="image9" />
-                            <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
                 <Rentalbnb />
                 <Monbeatmaker />
                 <JobAds />
                 <Mep />
+                <Itwebson />
                 <Bluepush />
                 <Univrec />
                 <MoviesTrailer />
@@ -224,7 +222,6 @@ const Portefolio = () => {
                 <Chatui />
                 <UnivrecUI />
             </div>
-
 
         </>
     );

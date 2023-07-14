@@ -40,11 +40,6 @@ const Resume = () => {
                                 <li>Participation au développement d'un site web en fullstack NextJs + Laravel (réalisation complète du back-office)</li>
                             </ul>
                         </div>
-
-
-                    </div>
-                    <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-                        {/* <h3 className="resume-title">Experience Professionel</h3> */}
                         <div className="resume-item">
                             <h4>Développeur fullstack Laravel &amp; ReactJs</h4>
                             <h5>De Novembre 2021 - Janvier 2022</h5>
@@ -58,6 +53,10 @@ const Resume = () => {
                                 </li>
                             </ul>
                         </div>
+
+                    </div>
+                    <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+                        {/* <h3 className="resume-title">Experience Professionel</h3> */}
                         <div className="resume-item">
                             <h4>Développeur web Laravel stagiaire</h4>
                             <h5>De Juin 2021 - Septembre 2021</h5>

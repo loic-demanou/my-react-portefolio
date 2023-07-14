@@ -19,11 +19,11 @@ const AboutSection = () => {
                         <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                             <h3>Développeur web Fullstack React JS | Laravel | Node Js</h3>
                             <p className="fst-italic">
-                            Née en 2000 et Titulaire d'une licence technologique en Génie Logiciel, je suis un développeur web passionné d'informatique, j'ai appris a coder
-                                dans divers langages informatiques (JavaScript, Laravel,
-                                React js...). Polyvalent et rigoureux, je connais les différentes étapes
-                                techniques de la création d’une application web; de la compréhension des besoins utilisateurs, 
-                                au développement frontend et backend en passant par la maintenance.
+                            Titulaire d'une licence technologique en Génie Logiciel et fort de mon expérience en développement web, 
+                            je suis passionné par la transformation des idées en réalités digitales. Grâce à mon expertise et à mon désir 
+                            constant d'apprendre et de relever de nouveaux défis, je me suis développé en tant que développeur polyvalent 
+                            capable de concevoir et de développer des applications efficaces et esthétiques pour les entreprises et 
+                            les organisations de toutes tailles.
                             </p>
                             <div className="row">
                                 <div className="col-lg-6">
