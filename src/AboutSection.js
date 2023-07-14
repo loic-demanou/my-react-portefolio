@@ -29,28 +29,16 @@ const AboutSection = () => {
                                 <div className="col-lg-6">
                                     <ul>
                                         <li><i className="bi bi-chevron-right" /> <strong>Age:</strong> <span>22 ans</span></li>
-                                        {/* <li><i className="bi bi-chevron-right" /> <strong>Site web:</strong> <span>www.example.com</span></li> */}
-                                        <li><i className="bi bi-chevron-right" /> <strong>Téléphone:</strong> <div className="d-flex flex-column">
-                                        <span>+225 07 01 82 67 64</span> <span>+225 05 85 96 60 47</span></div> </li>
                                         <li><i className="bi bi-chevron-right" /> <strong>Ville:</strong> <span>Abidjan, Côte d'Ivoire</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
-                                        {/* <li><i className="bi bi-chevron-right" /> <strong>Age:</strong> <span>30</span></li> */}
-                                        <li><i className="bi bi-chevron-right" /> <strong>Etude:</strong> <span>Licence Technologique</span></li>
-                                        <li><i className="bi bi-chevron-right" /> <strong>Email:</strong> <span>loicdemanou.9@gmail.com</span>
-                                        </li>
+                                        <li><i className="bi bi-chevron-right" /> <strong>Etude:</strong> <span>Licence Technologique (Bac+3) </span></li>
                                         <li><i className="bi bi-chevron-right" /> <strong>Freelance:</strong> <span>Disponible</span></li>
                                     </ul>
                                 </div>
                             </div>
-                            {/* <p>
-                                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
-                                ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-                                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                            </p> */}
                         </div>
                     </div>
                 </div>
