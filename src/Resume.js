@@ -3,32 +3,11 @@ const Resume = () => {
         <>
             <div className="container">
                 <div className="section-title">
-                    <h2>Resumé</h2>
-                    {/* <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-                        in iste officiis commodi quidem hic quas.</p> */}
+                    <h2>Experience Professionel</h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-6" data-aos="fade-up">
-                        <h3 className="resume-title">Education</h3>
-                        <div className="resume-item">
-                            <h4>Licence Technologique En Génie Logiciel</h4> 
-                            <h5>2020 - 2021</h5>
-                            <p><em>Institut Universitaire de la Côte, Douala, Cameroun</em></p>
-                        </div>
-                        <div className="resume-item">
-                            <h4>Brevet de Technicien Supérieur (BTS) En Génie Logiciel</h4>
-                            <h5>2019 - 2020</h5>
-                            <p><em>Institut Universitaire de la Côte, Douala, Cameroun</em></p>
-                        </div>
-                        <div className="resume-item">
-                            <h4>Baccalauréat D </h4>
-                            <h5>2017 - 2018</h5>
-                            <p><em>Lycée classique, Dschang, Cameroun</em></p>
-                        </div>
-                    </div>
-                    <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-                        <h3 className="resume-title">Experience Professionel</h3>
+                        {/* <h3 className="resume-title">Education</h3> */}
                         <div className="resume-item">
                             <h4>Développeur web </h4>
                             <h5>De Février 2023 à nos jours</h5>
@@ -45,9 +24,9 @@ const Resume = () => {
                             <p><em>ItWebson, Abidjan, Côte d'Ivoire </em></p>
                             <ul>
                                 <li>
-                                Principalement développeur front-end dans un projet de conception d'une ERP utilisée par une entreprise pour
-                                gérer ses différentes sucursales dans tout le pays.
-                                    Gestion de stock et facturation, système multi-boutiques: 
+                                    Principalement développeur front-end dans un projet de conception d'une ERP utilisée par une entreprise pour
+                                    gérer ses différentes sucursales dans tout le pays.
+                                    Gestion de stock et facturation, système multi-boutiques:
                                     de la commande des produits chez les fournisseurs à la livraison chez les clients <del></del>
                                 </li>
                             </ul>
@@ -61,16 +40,21 @@ const Resume = () => {
                                 <li>Participation au développement d'un site web en fullstack NextJs + Laravel (réalisation complète du back-office)</li>
                             </ul>
                         </div>
+
+
+                    </div>
+                    <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+                        {/* <h3 className="resume-title">Experience Professionel</h3> */}
                         <div className="resume-item">
                             <h4>Développeur fullstack Laravel &amp; ReactJs</h4>
                             <h5>De Novembre 2021 - Janvier 2022</h5>
                             <p><em>Parazit music, Douala, Cameroun </em></p>
                             <ul>
                                 <li>Participation au développement d'un site de vente de beats
-                                            musicaux avec Laravel et le framework front-end Nextjs, plus précisement de,  
-                                            (Gestion des utilisteurs et roles, Marketplace, Panier, Gestion des
-                                        beats et playlists, Système de Following et Favori, Back-Office
-                                        complet, ...)
+                                    musicaux avec Laravel et le framework front-end Nextjs, plus précisement de,
+                                    (Gestion des utilisteurs et roles, Marketplace, Panier, Gestion des
+                                    beats et playlists, Système de Following et Favori, Back-Office
+                                    complet, ...)
                                 </li>
                             </ul>
                         </div>

@@ -134,7 +134,7 @@ const Portefolio = () => {
                         </div>
                         <span className="mb-2">
                             <center><strong>MEP Ges-Stock</strong></center>
-                            <center className="fst-italic">Application de Gestion de stock</center>
+                            <center className="fst-italic">Application de suivi chantier et gestion de stock</center>
                         </span>
                     </div>
 

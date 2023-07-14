@@ -726,7 +726,8 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 0px;
+  /* padding-bottom: 130px; */
 }
 .contact .info {
   padding: 30px;
@@ -755,7 +756,7 @@ section {
   color: #050d18;
 }
 .contact .info p {
-  padding: 0 0 10px 60px;
+  /* padding: 0 0 10px 60px; */
   margin-bottom: 20px;
   font-size: 14px;
   color: #173b6c;
@@ -778,7 +779,7 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 .contact .info .social-links a:hover {
   background: #149ddd;
