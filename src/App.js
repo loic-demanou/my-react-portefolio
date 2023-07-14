@@ -5,12 +5,9 @@ import Portefolio from './Portefolio';
 import Resume from './Resume';
 import Sidebar from './Sidebar';
 import SkillSection from './SkillSection';
-// import logo from './logo.svg';
-// import './App.css';
 import $ from 'jquery'
 import Testimonial from './Testimonial';
 import Contact from './Contact';
-// import { ExternalLink } from 'react-external-link';
 import cv from "./Ressources/CV_Loïc_DEMANOU.pdf"
 
 function App() {
@@ -49,7 +46,6 @@ function App() {
           </div>
         </section>{/* End Hero */}
         <main id="main">
-          {/* <Route exact path='/bluepush' component={Bluepush} /> */}
 
           {/* ======= About Section ======= */}
 
@@ -82,11 +78,6 @@ function App() {
               © Copyright <strong><span>Loic Demanou</span></strong>
             </div>
             <div className="credits">
-              {/* All the links in the footer should remain intact. */}
-              {/* You can delete the links only if you purchased the pro version. */}
-              {/* Licensing information: https://bootstrapmade.com/license/ */}
-              {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ */}
-              {/* Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> */}
             </div>
           </div>
         </footer>{/* End  Footer */}

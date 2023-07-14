@@ -1,8 +1,5 @@
-// import { Link } from "react-router-dom";
 import { ExternalLink } from 'react-external-link';
 import { HashLink as Link, NavHashLink } from 'react-router-hash-link';
-// import { NavLink } from 'react-router-dom';
-// import profil from './Ressources/images/profil.jpeg'
 import profil2 from './Ressources/images/profil2.jpg'
 const Sidebar = () => {
     return (
@@ -15,11 +12,7 @@ const Sidebar = () => {
                         <div className="social-links mt-3 text-center">
                             <ExternalLink href="https://linkedin.com/in/loic-demanou-dev" className="linkedin"><i className="bx bxl-linkedin" /></ExternalLink>
                             <ExternalLink href="https://github.com/loic-demanou" className="twitter"><i className="bx bxl-github" /></ExternalLink>
-                            {/* <ExternalLink href="live:.cid.cce7389a7fc5b513" className="google-plus"><i className="bx bxl-skype" /></ExternalLink> */}
                             <ExternalLink href="https://web.facebook.com/loic.demanou.7/" className="facebook"><i className="bx bxl-facebook" /></ExternalLink>
-                            {/* <Link to="#" className="linkedin"><i className="bx bxl-linkedin" /></Link>
-                            <Link to="#" className="facebook"><i className="bx bxl-facebook" /></Link> */}
-                            {/* <Link to="#" className="instagram"><i className="bx bxl-instagram" /></Link> */}
                         </div>
                     </div>
                     <nav id="navbar" className="nav-menu navbar">
