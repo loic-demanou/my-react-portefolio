@@ -8,7 +8,6 @@ import SkillSection from './SkillSection';
 // import logo from './logo.svg';
 // import './App.css';
 import $ from 'jquery'
-import Services from './Services';
 import Testimonial from './Testimonial';
 import Contact from './Contact';
 // import { ExternalLink } from 'react-external-link';
@@ -68,10 +67,6 @@ function App() {
             <Portefolio />
           </section>
 
-          <section id="services" className="services">
-            <Services />
-          </section>
-
           <section id="testimonials" className="testimonials section-bg">
             <Testimonial />
           </section>
@@ -96,8 +91,6 @@ function App() {
           </div>
         </footer>{/* End  Footer */}
         <Link to="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short" /></Link>
-
-
 
 
       </body>

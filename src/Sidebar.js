@@ -2,14 +2,15 @@
 import { ExternalLink } from 'react-external-link';
 import { HashLink as Link, NavHashLink } from 'react-router-hash-link';
 // import { NavLink } from 'react-router-dom';
-import profil from './Ressources/images/profil.jpeg'
+// import profil from './Ressources/images/profil.jpeg'
+import profil2 from './Ressources/images/profil2.jpg'
 const Sidebar = () => {
     return (
         <>
             <header id="header">
                 <div className="d-flex flex-column">
                     <div className="profile">
-                        <img src={profil} alt="Profile imagjjje" className="img-fluid rounded-circle" />
+                        <img src={profil2} alt="Profile" className="img-fluid rounded-circle" />
                         <h1 className="text-light"><Link to="#">Demanou Loïc</Link></h1>
                         <div className="social-links mt-3 text-center">
                             <ExternalLink href="https://linkedin.com/in/loic-demanou-dev" className="linkedin"><i className="bx bxl-linkedin" /></ExternalLink>
@@ -27,10 +28,9 @@ const Sidebar = () => {
                             {/* <li><a href="#about" className="nav-link scrollto"><i className="bx bx-user" /> <span>A propos</span></a></li> */}
                             <li><NavHashLink to="#about" className="nav-link scrollto"><i className="bx bx-user" /> <span>A propos</span></NavHashLink></li>
                             <li><NavHashLink to="#skills" className="nav-link scrollto"><i className="bx bx-cloud-lightning" /> <span>Compétences</span></NavHashLink></li>
-                            <li><NavHashLink to="#resume" className="nav-link scrollto"><i className="bx bx-file-blank" /> <span>Resumé</span></NavHashLink></li>
+                            <li><NavHashLink to="#resume" className="nav-link scrollto"><i className="bx bx-file-blank" /> <span>Expérience</span></NavHashLink></li>
                             <li><NavHashLink to="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content" />
                                 <span>Réalisations</span></NavHashLink></li>
-                            <li><NavHashLink to="#services" className="nav-link scrollto"><i className="bx bx-server" /> <span>Services</span></NavHashLink></li>
                             <li><NavHashLink to="#testimonials" className="nav-link scrollto"><i class='bx bx-user-voice' ></i> <span>Témoignages</span></NavHashLink></li>
                             <li><NavHashLink to="#contact" className="nav-link scrollto"><i className="bx bx-envelope" /> <span>Contact</span></NavHashLink></li>
                         </ul>
