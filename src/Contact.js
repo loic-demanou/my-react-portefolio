@@ -10,27 +10,27 @@ const Contact = () => {
                     </p>
                 </div>
                 <div className="row" data-aos="fade-in">
-                    <div className="">
-                        <div className="info d-flex flex-wrap align-items-center justify-content-evenly flex-row gap-3">
-                            <div className="email">
+                        <div className="info  d-flex flex-wrap align-items-center justify-content-center flex-row gap-3">
+                            <div className="email col-lg-4">
                                 <a href="mailto:loicdemanou.9@gmail.com">
                                     <i className="bi bi-envelope" />
                                     <h4>Email:</h4>
                                     <p>loicdemanou.9@gmail.com</p>
                                 </a>
                             </div>
-                            <div className="phone">
+                            <div className="phone col-lg-4">
                                 <a href="tel:+2250701826764">
                                     <i className="bi bi-phone" />
                                     <h4>Téléphone:</h4>
                                     <p>+225 07 01 82 67 64</p>
                                 </a>
                             </div>
-                            <div className="social d-flex flex-column align-items-center justify-content-center gap-2">
+                            <div className="social col-lg-4 ">
+                            {/* <div className="social col-lg-4 d-flex flex-column align-items-center justify-content-center gap-2"> */}
                                 
-                                    <h4>Réseaux sociaux</h4>
+                                    <h4 className='position-relative ' style={{ left:"-60px" }}>Réseaux sociaux</h4>
                                     <div>
-                                        <p className="d-flex flex-row gap-3">
+                                        <p className="d-flex flex-row gap-3" style={{ gap:"15px" }}>
                                             <a href="https://linkedin.com/in/loic-demanou-dev" target="_blank" rel='noreferrer'>
                                                 <BsLinkedin size={30} />
                                             </a>
@@ -46,7 +46,6 @@ const Contact = () => {
                             </div>
                             {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameBorder={0} style={{ border: 0, width: '100%', height: 290 }} allowFullScreen /> */}
                         </div>
-                    </div>
                     {/* <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                         <form onSubmit={sendEmail} className="php-email-form">
                             <div className="row">

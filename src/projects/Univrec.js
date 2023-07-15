@@ -20,7 +20,7 @@ const Univrec = () => {
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title" id="staticBackdropLabel">Univrec</h5>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+                        <button type="button" className="bx bx-x" data-bs-dismiss="modal" aria-label="Close" />
                     </div>
                     <div className="modal-body">
 
